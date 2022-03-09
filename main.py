@@ -32,4 +32,7 @@ class MySubdomainDispatcher(object):
 app = MySubdomainDispatcher(BaseConfig.uri)
 
 if __name__ == '__main__':
-    run_simple('0.0.0.0', 5000, app, use_debugger=True, use_reloader=True, use_evalex=True, ssl_context=('./cert.pem', './key.pem'))
+    if BaseConfig.ENV == 'development':
+        run_simple('0.0.0.0', 5000, app, use_debugger=True, use_reloader=True, use_evalex=True, ssl_context=('./cert.pem', './key.pem'))
+    else:
+        run_simple('0.0.0.0', 5000, app, use_debugger=True, use_reloader=True, use_evalex=True)
