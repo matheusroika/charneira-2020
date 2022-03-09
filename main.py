@@ -13,8 +13,7 @@ class MySubdomainDispatcher(object):
         self.lock = Lock()
         self.instances = {
             '': charneira_app,
-            'www': charneira_app,
-            }
+        }
 
     def get_application(self, host):
         host = host.split(':')[0]
