@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/apoiadores.css') }}?v=8">
+{% endblock %}
+
+{% block body %}
+<div class='content'>
+    <div id='text-content'>
+        <h1>Apoiadores</h1>
+        <div aria-roledescription="carousel" id="apoiadores">
+            <div class="line d-none active">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/OTIMA.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/OTIMA.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Ótima Gráfica" src="{{ url_for('static', filename='apoiadores/OTIMA.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>ÓTIMA_GRÁFICA<br>&nbsp;</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.otima-loja.com.br" aria-label="Loja da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://otima.com.br" aria-label="Site da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/otimagrafica/" aria-label="Instagram da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/otimagrafica/" aria-label="Facebook da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Tumbalacatumba.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Tumbalacatumba.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Tumbalacatumba Store" src="{{ url_for('static', filename='apoiadores/Tumbalacatumba.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>TUMBALACATUMBA<br>STORE</h2> 
+                    <div class="redes-sociais">
+                        <p><a href="https://www.tumbalacatumbastore.com.br" aria-label="Site da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/tumba_store/" aria-label="Instagram da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/tumbastore/" aria-label="Facebook da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/EstudioInvertido.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/EstudioInvertido.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo do Estúdio Invertido" src="{{ url_for('static', filename='apoiadores/EstudioInvertido.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>ESTÚDIO_INVERTIDO<br>&nbsp;</h2>
+                    <div class="redes-sociais">
+                        <p><a href="http://estudioinvertido.com.br" aria-label="Site do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/estudioinvertido/" aria-label="Instagram do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/invertidoestudio/" aria-label="Facebook do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Colophon.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Colophon.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Colophon" src="{{ url_for('static', filename='apoiadores/Colophon.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>COLOPHON<br>&nbsp;</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.colophon.com.br" aria-label="Loja da Colophon" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/lojacolophon/" aria-label="Instagram da Colophon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/lojacolophon/" aria-label="Facebook da Colophon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/UseBeru.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/UseBeru.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Beru" src="{{ url_for('static', filename='apoiadores/UseBeru.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>BERU<br>&nbsp;</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.instagram.com/use.beru/" aria-label="Instagram da Beru" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/use.beru/" aria-label="Facebook da Beru" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/GreatOne.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/GreatOne.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Great One" src="{{ url_for('static', filename='apoiadores/GreatOne.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>GREAT_ONE<br>&nbsp;</h2> 
+                    <div class="redes-sociais">
+                        <p><a href="https://greatone.com.br" aria-label="Site da Great One" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/greatonebrasil/" aria-label="Instagram da Great One" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/greatonebrasil/" aria-label="Facebook da Great One" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container" id="redbull">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/RedBull.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/RedBull.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Ótima Gráfica" src="{{ url_for('static', filename='apoiadores/RedBull.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2>RED_BULL<br>&nbsp;</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.redbull.com/br-pt/" aria-label="Site da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/redbullbr/" aria-label="Instagram da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/RedBull/" aria-label="Facebook da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <a tabindex="0" class="carousel-control-prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a tabindex="0" class="carousel-control-next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <div aria-roledescription="carousel" id="apoiadores-mobile">
+            <div class="line d-none active">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/OTIMA.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/OTIMA.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Ótima Gráfica" src="{{ url_for('static', filename='apoiadores/OTIMA.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">ÓTIMA<br>GRÁFICA</h2>
+                    <h2 class="h2-tablet">ÓTIMA_GRÁFICA</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.otima-loja.com.br" aria-label="Loja da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://otima.com.br" aria-label="Site da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/otimagrafica/" aria-label="Instagram da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/otimagrafica/" aria-label="Facebook da Ótima Gráfica" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Tumbalacatumba.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Tumbalacatumba.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Tumbalacatumba Store" src="{{ url_for('static', filename='apoiadores/Tumbalacatumba.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">TUMBALACATUMBA<br>STORE</h2>
+                    <h2 class="h2-tablet">TUMBALACATUMBA<br>STORE</h2> 
+                    <div class="redes-sociais">
+                        <p><a href="https://www.tumbalacatumbastore.com.br" aria-label="Site da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/tumba_store/" aria-label="Instagram da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/tumbastore/" aria-label="Facebook da Tumbalacatumba Store" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/EstudioInvertido.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/EstudioInvertido.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo do Estúdio Invertido" src="{{ url_for('static', filename='apoiadores/EstudioInvertido.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">ESTÚDIO<br>INVERTIDO</h2>
+                    <h2 class="h2-tablet">ESTÚDIO_INVERTIDO</h2>
+                    <div class="redes-sociais">
+                        <p><a href="http://estudioinvertido.com.br" aria-label="Site do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/estudioinvertido/" aria-label="Instagram do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/invertidoestudio/" aria-label="Facebook do Estúdio Invertido" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Colophon.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/Colophon.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Colophon" src="{{ url_for('static', filename='apoiadores/Colophon.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">COLOPHON<br>&nbsp;</h2>
+                    <h2 class="h2-tablet">COLOPHON</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.colophon.com.br" aria-label="Loja da Colophon" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/lojacolophon/" aria-label="Instagram da Colophon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/lojacolophon/" aria-label="Facebook da Colophon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/UseBeru.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/UseBeru.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Colophon" src="{{ url_for('static', filename='apoiadores/UseBeru.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">BERU<br>&nbsp;</h2>
+                    <h2 class="h2-tablet">BERU</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.instagram.com/use.beru/" aria-label="Instagram da Beru" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/use.beru/" aria-label="Facebook da Beru" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/GreatOne.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/GreatOne.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Colophon" src="{{ url_for('static', filename='apoiadores/GreatOne.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">GREAT_ONE<br>&nbsp;</h2>
+                    <h2 class="h2-tablet">GREAT_ONE</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://greatone.com.br" aria-label="Site da Great One" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart"></i></a></p>
+                        <p><a href="https://www.instagram.com/greatonebrasil/" aria-label="Instagram da Great One" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/greatonebrasil/" aria-label="Facebook da Great One" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="line d-none">
+                <div>
+                    <div class="img-container">
+                        <picture>
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/RedBull.webp') }}" type="image/webp">
+                            <source data-srcset="{{ url_for('static', filename='apoiadores/RedBull.jpg') }}" type="image/jpeg">
+                            <img class="lazy" alt="Logotipo da Colophon" src="{{ url_for('static', filename='apoiadores/RedBull.jpg') }}">
+                        </picture>
+                    </div>
+                    <h2 class="h2-mobile">RED_BULL<br>&nbsp;</h2>
+                    <h2 class="h2-tablet">RED_BULL</h2>
+                    <div class="redes-sociais">
+                        <p><a href="https://www.redbull.com/br-pt/" aria-label="Site da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a></p>
+                        <p><a href="https://www.instagram.com/redbullbr/" aria-label="Instagram da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></p>
+                        <p><a href="https://www.facebook.com/RedBull/" aria-label="Facebook da Red Bull" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <a tabindex="0" class="carousel-control-prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a tabindex="0" class="carousel-control-next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block tail %}
+<script>
+    var carouselTotal = 4
+    var carouselTotalMobile = 7
+    var carouselCurrent = 1
+    var carouselCurrentMobile = 1
+
+    function carouselMove() {
+        $("#apoiadores > div").removeClass("active")
+        $("#apoiadores > div:nth-of-type("+carouselCurrent+")").addClass("active")
+        $("#apoiadores-mobile > div").removeClass("active")
+        $("#apoiadores-mobile > div:nth-of-type("+carouselCurrentMobile+")").addClass("active")
+    }
+
+    function movePrev() {
+        carouselCurrent -= 1
+        carouselCurrentMobile -= 1
+        if (carouselCurrent < 1) {
+            carouselCurrent = carouselTotal
+        }
+        if (carouselCurrentMobile < 1) {
+            carouselCurrentMobile = carouselTotalMobile
+        }
+    }
+
+    function moveNext() {
+        carouselCurrent += 1
+        carouselCurrentMobile += 1
+        if (carouselCurrent > carouselTotal) {
+            carouselCurrent = 1
+        }
+        if (carouselCurrentMobile > carouselTotalMobile) {
+            carouselCurrentMobile = 1
+        }
+    }
+
+    $(".carousel-control-prev").click(function(){
+        movePrev()
+        carouselMove()
+    });
+
+    $(".carousel-control-next").click(function(){
+        moveNext()
+        carouselMove()    
+    });
+
+    $(".carousel-control-prev").keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            movePrev()
+            carouselMove()
+        }
+    })
+
+    $(".carousel-control-next").keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            moveNext()
+            carouselMove()
+        }
+    })
+</script>
+{% endblock tail %}

@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/faq.css') }}?v=5">
+{% endblock %}
+
+{% block body %}
+<div class='content'>
+    <div id='text-content'>
+        <h1 id="perguntas-frequentes">Perguntas_Frequentes</h1>
+        <h1 id="perguntas-frequentes-mobile">Perguntas Frequentes</h1>
+        <div class="perguntas">
+            <div class="pergunta-container" aria-controls="Presencial" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true"  class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Presencial">
+                        <h2 class="vertical-center">O evento vai ser presencial?</h2>
+                        <p>O mundo está em constante mudança e a Charneira não é exceção. Buscando trazer o melhor possível do design para todos, chegamos a decisão de oferecer um evento cem por cento digital este ano. Com isso, não somente Curitiba, mas o Brasil e até mesmo o mundo poderá aproveitar um pedaço da nossa semana.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Digital" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Digital">
+                        <h2 class="vertical-center">Como vai acontecer o evento no digital?</h2>
+                        <p>O evento será feito via streaming na plataforma Doity, durante os dias 28/09 e 02/10. Levando tudo isso em conta, estamos trabalhando todo dia para trazer o melhor evento possível para vocês, que mesmo não sendo presencial, ainda tenha aquele gostinho de Charneira que a gente adora.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Ingresso" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Ingresso">
+                        <h2 class="vertical-center">Onde eu compro o ingresso?</h2>
+                        <p>O ingresso está sendo vendido no Doity da Charneira, lá na plataforma você pode escolher entre vários níveis de ingressos, cada um com brindes exclusivos pra caber no bolso de todo mundo.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Pagar" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Pagar">
+                        <h2 class="vertical-center">Por que pagar ingresso se o evento é digital?</h2>
+                        <p>A Charneira é a nossa semana acadêmica e queremos que você tenha uma ótima experiência além de receber pontos complementares.
+                            Justamente para isso, disponibilizamos diferentes valores para que todos possam participar e ter acesso ao nosso conteúdo exclusivo 100% digital. O investimento é pequeno perto do que você irá ganhar em troca!
+                            A Charneira não possui fins lucrativos, com o dinheiro arrecadado iremos cobrir os custos do site, da plataforma de transmissão e dos kits que preparamos especialmente para você.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Limite" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Limite">
+                        <h2 class="vertical-center">Vai ter limite de vagas nas palestras/workshops?</h2>
+                        <p>Pelo evento ser digital, não haverá limites de participantes.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Lives" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Lives">
+                        <h2 class="vertical-center">Como vou ver as lives?</h2>
+                        <p>Quando você se inscreve, é enviado pro seu email um link de acesso as nossas lives. Esse link é pessoal e intransferível pra ninguém poder roubar o seu lugar, então não precisa se preocupar mais com conseguir uma vaga naquele workshop imperdível ;)<br>
+                            "Mas Charneira, e se eu perder o meu email com o link?"<br>
+                            Avisa pra gente! Manda uma mensagem com o seu nome completo e o email que você usou pra se cadastrar que mandamos o link de novo pra você sem problema.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Kits" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Kits">
+                        <h2 class="vertical-center">Como vamos receber os kits?</h2>
+                        <p>Os kits serão enviados a partir do dia 21/09, entregue por voluntários do evento e correio dependendo da distância.</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+
+            <div class="pergunta-container" aria-controls="Certificado" aria-expanded="false" role="button" tabindex="0">
+                <p aria-hidden="true" class="interrogacao">?</p>
+                <div class="pergunta">
+                    <p class="interrogacao-mobile">?</p>
+                    <div class="pergunta-content" id="Certificado">
+                        <h2 class="vertical-center">Não recebi o certificado da Charneira XXXX, o que eu faço?</h2>
+                        <p>Infelizmente, como a gestão muda todo o ano não podemos ajudar com os certificados das outras edições. Mas asseguramos que nesse ano, todos os certificados vão ser gerados automaticamente pelo Doity,  Então não precisam se preocupar!</p>
+                    </div>
+                    <div class="offset-border"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block tail %}
+<script>
+    $(".pergunta-container").click(function() {
+        var _self = this
+        if ($(this).children(".pergunta").children(".pergunta-content").children("p").hasClass("active")) {
+            $(this).children(".pergunta").children(".pergunta-content").children("h2").addClass("vertical-center")
+            $(this).children(".pergunta").children(".pergunta-content").children("p").slideUp(function() {
+                $(_self).children(".pergunta").children(".pergunta-content").children("p").removeClass("active")
+            })
+            $(this).children(".interrogacao").removeClass("clicado")
+            $(this).children(".pergunta").children(".interrogacao-mobile").removeClass("clicado")
+            $(this).attr("aria-expanded","false")
+        } else {
+            $(this).children(".pergunta").children(".pergunta-content").children("h2").removeClass("vertical-center")
+            $(this).children(".pergunta").children(".pergunta-content").children("p").slideDown(function() {
+                $(_self).children(".pergunta").children(".pergunta-content").children("p").addClass("active")
+            })
+            $(this).children(".interrogacao").addClass("clicado")
+            $(this).children(".pergunta").children(".interrogacao-mobile").addClass("clicado")
+            $(this).attr("aria-expanded","true")
+        }
+    })
+
+    $(".pergunta-container").keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            var _self = this
+            if ($(this).children(".pergunta").children(".pergunta-content").children("p").hasClass("active")) {
+                $(this).children(".pergunta").children(".pergunta-content").children("h2").addClass("vertical-center")
+                $(this).children(".pergunta").children(".pergunta-content").children("p").slideUp(function() {
+                    $(_self).children(".pergunta").children(".pergunta-content").children("p").removeClass("active")
+                })
+                $(this).children(".interrogacao").removeClass("clicado")
+                $(this).children(".pergunta").children(".interrogacao-mobile").removeClass("clicado")
+                $(this).attr("aria-expanded","false")
+            } else {
+                $(this).children(".pergunta").children(".pergunta-content").children("h2").removeClass("vertical-center")
+                $(this).children(".pergunta").children(".pergunta-content").children("p").slideDown(function() {
+                    $(_self).children(".pergunta").children(".pergunta-content").children("p").addClass("active")
+                })
+                $(this).children(".interrogacao").addClass("clicado")
+                $(this).children(".pergunta").children(".interrogacao-mobile").addClass("clicado")
+                $(this).attr("aria-expanded","true")
+            }   
+        }
+    })
+</script>
+{% endblock tail %}

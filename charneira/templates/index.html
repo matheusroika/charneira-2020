@@ -1,0 +1,386 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}?v=8">
+{% endblock %}
+
+{% block body %}
+<div class='content'>
+    <div id='text-content'>
+        <h1>O_Evento</h1>
+        <div>
+            <p>A proposta da Charneira é fomentar a discussão, troca, debate e a criação
+                de ideias sobre as diversas extensões do Design, promovendo
+                uma reflexão sobre a nossa atividade e que cada vez mais ela cresça e
+                seja valorizada.</p>
+            <P>Constitui-se por palestras, workshops, mesas redondas, mostras de Design,
+                entre outras, oferecidos do dia 28 de Setembro a 02 de Outubro, sendo no
+                total 05 dias de evento.</P>
+            <p>Neste ano, trabalhamos ao redor da Entropia, já que a história do mundo 
+                e a nossa noção de tempo são divididas em ciclos, de forma que cada período
+                sempre acaba com um estopim para o próximo. Apesar de todos os avanços na
+                globalização e na qualidade de vida, ainda assim nos encontramos numa quebra
+                de ciclo, onde a mudança não é somente bem-vinda, mas necessária.</p>
+            <p>Nossa intenção é promover que mesmo em meio à confusão, temos a capacidade
+                de transformar o mundo e a nós mesmos sem desperdiçarmos toda a energia
+                ao nosso redor, fazendo o melhor uso dela para a criação de algo novo.</p>     
+            <p>A Charneira deste ano será realizada 100% digitalmente de forma a zelar
+                pela saúde e segurança de todos.</p>
+        </div>
+    </div>
+
+    <div id="charneiras" class="carousel slide" aria-label="Logotipo de todas as Charneiras" aria-roledescription="carousel" role="region" data-ride="carousel" data-interval="false" data-wrap="false">
+        <div aria-live="polite" class="carousel-inner">
+            <div role="group" aria-roledescription="slide" aria-labelledby="2002" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2002.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2002.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2002.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2002.jpg') }}" aria-label="2002" alt="Charneira 2002">
+                    </picture>
+                </div>
+                <div id="2002" class="carousel-caption">
+                    <h5>Design em discussão</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2003" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2003.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2003.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2003.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2003.jpg') }}" aria-label="2003" alt="Charneira 2003">
+                    </picture>
+                </div>
+                <div id="2003" class="carousel-caption">
+                    <h5>Concepção da ideia</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2004" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2004.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2004.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2004.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2004.jpg') }}" aria-label="2004" alt="Charneira 2004">
+                    </picture>
+                </div>
+                <div id="2004" class="carousel-caption">
+                    <h5>Onde tudo começou</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2005" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2005.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2005.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2005.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2005.jpg') }}" aria-label="2005" alt="Charneira 2005">
+                    </picture>
+                </div>
+                <div id="2005" class="carousel-caption">
+                    <h5>A sedução do Design</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2006" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2006.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2006.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2006.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2006.jpg') }}" aria-label="2006" alt="Charneira 2006">
+                    </picture>
+                </div>
+                <div id="2006" class="carousel-caption">
+                    <h5>Sobrevivência</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2007" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2007.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2007.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2007.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2007.jpg') }}" aria-label="2007" alt="Charneira 2007">
+                    </picture>
+                </div>
+                <div id="2007" class="carousel-caption">
+                    <h5>Caleidoscópio</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2008" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2008.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2008.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2008.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2008.jpg') }}" aria-label="2008" alt="Charneira 2008">
+                    </picture>
+                </div>
+                <div id="2008" class="carousel-caption">
+                    <h5 class="copernico">Copérnico, a luneta e o sol que só queria cegar</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2009" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2009.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2009.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2009.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2009.jpg') }}" aria-label="2009" alt="Charneira 2009">
+                    </picture>
+                </div>
+                <div id="2009" class="carousel-caption">
+                    <h5>Interferência</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2010" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2010.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2010.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2010.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2010.jpg') }}" aria-label="2010" alt="Charneira 2010">
+                    </picture>
+                </div>
+                <div id="2010" class="carousel-caption">
+                    <h5>Brasilidade</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2011" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2011.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2011.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2011.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2011.jpg') }}" aria-label="2011" alt="Charneira 2011">
+                    </picture>
+                </div>
+                <div id="2011" class="carousel-caption">
+                    <h5>Nós com eles<br>Nós sem eles</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2012" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2012.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2012.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2012.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2012.jpg') }}" aria-label="2012" alt="Charneira 2012">
+                    </picture>
+                </div>
+                <div id="2012" class="carousel-caption">
+                    <h5>Fim do mundo</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2013" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2013.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2013.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2013.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2013.jpg') }}" aria-label="2013" alt="Charneira 2013">
+                    </picture>
+                </div>
+                <div id="2013" class="carousel-caption">
+                    <h5>Insight</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2014" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2014.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2014.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2014.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2014.jpg') }}" aria-label="2014" alt="Charneira 2014">
+                    </picture>
+                </div>
+                <div id="2014" class="carousel-caption">
+                    <h5>Supernova</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2015" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2015.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2015.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2015.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2015.jpg') }}" aria-label="2015" alt="Charneira 2015">
+                    </picture>
+                </div>
+                <div id="2015" class="carousel-caption">
+                    <h5>Percepção</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2016" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2016.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2016.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2016.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2016.jpg') }}" aria-label="2016" alt="Charneira 2016">
+                    </picture>
+                </div>
+                <div id="2016" class="carousel-caption">
+                    <h5>Sinestesia</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2017" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2017.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2017.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2017.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2017.jpg') }}" aria-label="2017" alt="Charneira 2017">
+                    </picture>
+                </div>
+                <div id="2017" class="carousel-caption">
+                    <h5>Do elementar ao multiverso</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2018" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2018.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2018.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2018.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2018.jpg') }}" aria-label="2018" alt="Charneira 2018">
+                    </picture>
+                </div>
+                <div id="2018" class="carousel-caption">
+                    <h5>Transpose</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2019" class="carousel-item">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2019.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2019.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2019.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2019.jpg') }}" aria-label="2019" alt="Charneira 2019">
+                    </picture>
+                </div>
+                <div id="2019" class="carousel-caption">
+                    <h5>Nômade</h5>
+                </div>
+            </div>
+            <div role="group" aria-roledescription="slide" aria-labelledby="2020" class="carousel-item active">
+                <div class="img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2020.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='charneiras/2020.jpg') }}" type="image/jpeg">
+                        <img class="d-block w-100 lazy" src="{{ url_for('static', filename='charneiras/Placeholder/2020.jpg') }}" data-src="{{ url_for('static', filename='charneiras/2020.jpg') }}" aria-label="2020" alt="Charneira 2020">
+                    </picture>
+                </div>
+                <div id="2020" class="carousel-caption">
+                    <h5>Entropia</h5>
+                </div>
+            </div>
+        </div>
+        <div aria-hidden="true" class="years-charneiras">
+            <div>
+                <span class="year">2000</span>
+                <span class="year">●</span>
+                <span class="year">2001</span>
+                <span class="year">●</span>
+                <span class="year">2002</span>
+                <span class="year">●</span>
+                <span class="year">2003</span>
+                <span class="year">●</span>
+                <span class="year">2004</span>
+                <span class="year">●</span>
+                <span class="year">2005</span>
+                <span class="year">●</span>
+                <span class="year">2006</span>
+                <span class="year">●</span>
+                <span class="year">2007</span>
+                <span class="year">●</span>
+                <span class="year">2008</span>
+                <span class="year">●</span>
+                <span class="year">2009</span>
+                <span class="year">●</span>
+                <span class="year">2010</span>
+                <span class="year">●</span>
+                <span class="year">2011</span>
+                <span class="year">●</span>
+                <span class="year">2012</span>
+                <span class="year">●</span>
+                <span class="year">2013</span>
+                <span class="year">●</span>
+                <span class="year">2014</span>
+                <span class="year">●</span>
+                <span class="year">2015</span>
+                <span class="year">●</span>
+                <span class="year">2016</span>
+                <span class="year">●</span>
+                <span class="year">2017</span>
+                <span class="year">●</span>
+                <span class="year showing">2018</span>
+                <span class="year showing">●</span>
+                <span class="year showing">2019</span>
+                <span class="year showing">●</span>
+                <span class="year showing">2020</span>
+                <span class="year showing">●</span>
+                <span class="year showing">2021</span>
+                <span class="year showing">●</span>
+                <span class="year showing">2022</span>
+            </div>
+        </div>
+        <a class="carousel-control-prev" aria-label="Anterior" href="#charneiras" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" aria-label="Próximo" href="#charneiras" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+</div>
+{% endblock body %}
+
+{% block tail %}
+<script>
+    var currentYear = 40;
+    var currentItem = 19;
+
+    function prevYears() {
+        $(".carousel-control-next").show().css("opacity", "1");
+        removeGrey();
+        $(".carousel-item").removeAttr("aria-hidden")
+        $(".carousel-item > .carousel-caption > h5").removeAttr("aria-hidden")
+        $(".carousel-item").slice(currentItem-1, currentItem).attr("aria-hidden","true")
+        $(".carousel-item").slice(currentItem-1, currentItem).children(".carousel-caption").children("h5").attr("aria-hidden","true")
+        $(".year").slice(currentYear-4, currentYear+5).removeClass("showing").addClass("year-prev");
+        currentItem -= 1
+        currentYear -= 2;
+        if (currentYear <= 4) {
+            $(".carousel-control-prev").css("opacity", "0");
+            setTimeout(function(){ $(".carousel-control-prev").hide(); }, 300);
+        }
+        setTimeout(function() {
+            $(".year").slice(currentYear-2, currentYear+7).removeClass("year-prev");
+            $(".year").slice(currentYear-4, currentYear+5).addClass("showing");
+            turnGrey(); 
+        }, 600);
+    }
+
+    function nextYears() {
+        $(".carousel-control-prev").show().css("opacity", "1");
+        removeGrey();
+        $(".carousel-item").removeAttr("aria-hidden")
+        $(".carousel-item > .carousel-caption > h5").removeAttr("aria-hidden")
+        $(".carousel-item").slice(currentItem-1, currentItem).attr("aria-hidden","true")
+        $(".carousel-item").slice(currentItem-1, currentItem).children(".carousel-caption").children("h5").attr("aria-hidden","true")
+        $(".year").slice(currentYear-4, currentYear+5).removeClass("showing").addClass("year-next");
+        currentItem += 1
+        currentYear += 2;
+        if (currentYear >= 40) {
+            $(".carousel-control-next").css("opacity", "0");
+            setTimeout(function(){ $(".carousel-control-next").hide(); }, 300);
+        }
+        setTimeout(function(){ 
+            $(".year").slice(currentYear-6, currentYear+3).removeClass("year-next");
+            $(".year").slice(currentYear-4, currentYear+5).addClass("showing"); 
+            turnGrey();
+        }, 600);
+    }
+
+    function turnGrey() {
+        $(".showing").eq(2).addClass("grey");
+        $(".showing").eq(6).addClass("grey");
+    }
+
+    function removeGrey() {
+        $(".grey").removeClass("grey");
+    }
+
+    turnGrey();
+    $(".carousel-control-next").css("opacity", "0").hide();
+
+    $("#charneiras").on("slide.bs.carousel", function(event) {
+        if (event.direction == 'right') { prevYears() }
+        else if (event.direction == 'left') { nextYears() } 
+    });
+</script>
+{% endblock tail %}

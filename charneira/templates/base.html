@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174998006-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-174998006-1');
+        </script>
+        <meta charset="utf-8">
+        <title>{{ title }}</title>
+        <meta name="description" content="Semana acadêmica de Design - PUCPR">
+        <meta name="keywords" content="Design, Charneira, PUC, PUCPR, PUC-PR, acadêmico">
+        <meta name="author" content="Charneira 2020">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}?v=11">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+        <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
+        <script src="https://kit.fontawesome.com/32a654c4c6.js" crossorigin="anonymous"></script>
+        {% block head %}
+        {% endblock head %}
+    </head>
+    <body>
+        <div class='container-fluid'>
+            <div class='row'>
+                <header class='border-gradient'>
+                    <nav class='navbar flex-column navbar-expand-md p-0'>
+                        <div class='navbar-flex'>
+                            <a class='navbar-brand p-0' href={{ url_for('index') }}><img alt="Logotipo da Charneira Entropia" id='header-image' src="{{ url_for('static', filename='header-entropia.svg') }}"><img alt="Logotipo da Charneira Entropia" id='header-image-mobile' src="{{ url_for('static', filename='header-entropia-mobile.svg') }}"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-links" aria-controls="header-links" aria-expanded="false" aria-label="Abrir navegação">
+                                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                            </button>
+                        </div>
+                        <div class='collapse navbar-collapse' id='header-links'>
+                            <ul class='navbar-nav flex-md-column'>
+                                <li class='nav-item'>
+                                    <a class='nav-link p-0' href={{ url_for('programacao') }}>Programação</a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link p-0' href={{ url_for('convidados') }}>Convidados</a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link p-0' href={{ url_for('apoiadores') }}>Apoiadores</a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link p-0' href={{ url_for('faq') }}>Dúvidas?</a>
+                                </li>
+                                <li class='nav-item'>
+                                    <a class='nav-link p-0' href={{ url_for('contato') }} target="_blank" rel="noopener noreferrer">Contato</a>
+                                </li>
+                            </ul>
+                            <div id='bottom-mobile'>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <div class='sub-box'>
+                                        <p class='logout'>INSCREVA-SE</p>
+                                    </div>
+                                </a>
+                                <footer>
+                                    <a href='https://www.instagram.com/charneirapuc/' aria-label="Instagram da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                    <a href='https://www.facebook.com/charneirapuc/' aria-label="Facebook da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                                    <a href='https://twitter.com/charneira' aria-label="Twitter da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                                    <a href='https://www.tiktok.com/@ch4rn3ira' aria-label="TikTok da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                                    <a href='https://www.youtube.com/channel/UCB8kxm8dEuGNaJygiXgNaww?sub_confirmation=1' aria-label="Youtube da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                                </footer>
+                            </div>
+                        </div>
+                    </nav>
+                    <div id='bottom'>
+                        <a target="_blank" rel="noopener noreferrer">
+                            <div class='sub-box'>
+                                <p class='logout'>INSCREVA-SE</p>
+                            </div>
+                        </a>
+                        <footer>
+                            <a href='https://www.instagram.com/charneirapuc/' aria-label="Instagram da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href='https://www.facebook.com/charneirapuc/' aria-label="Facebook da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href='https://twitter.com/charneira' aria-label="Twitter da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                            <a href='https://www.tiktok.com/@ch4rn3ira' aria-label="TikTok da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                            <a href='https://www.youtube.com/channel/UCB8kxm8dEuGNaJygiXgNaww?sub_confirmation=1' aria-label="Youtube da Charneira" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        </footer>
+                    </div>
+                </header>
+                <div aria-hidden="true" id="hachura-entropia">
+                    <img aria-hidden="true" id="entropia-gradiente" src="{{ url_for('static', filename='entropia-gradiente.svg') }}">
+                    <img aria-hidden="true" id="hachura" src="{{ url_for('static', filename='hachura.svg') }}"> 
+                </div>
+                <img aria-hidden="true" id="entropia-japones" src="{{ url_for('static', filename='entropia-japones.svg') }}">
+                {% block body %}
+                {% endblock body %}
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+        {% block tail %}
+        {% endblock tail %}
+        <script>
+            var lazyLoadInstance = new LazyLoad({})
+
+                $('.logister-box').hover(function() {
+                    $(this).children().css('color', 'black');
+                }, function() {
+                    $(this).children().css('color', 'white');
+                });
+
+                $('.dropdown').click(function() {
+                    $('.dropdown-content').toggleClass('d-none').toggleClass('dropdown-hover');
+                    $('.dropdown > .nav-link').toggleClass('nav-link-hover')
+                    setTimeout(function () {
+                        $('.dropdown-content').toggleClass('hidden')
+                    }, 20);  
+                });
+        </script>
+    </body>
+</html>

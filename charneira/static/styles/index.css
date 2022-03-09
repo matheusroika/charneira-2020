@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.content {
+    margin-top: 7rem;
+    margin-left: 3rem;
+    display: flex;
+}
+
+.carousel-inner {
+    width: 18.75rem;
+    height: 100%;
+}
+
+.carousel-item .img-container {
+    border: 5px solid;
+    border-image-slice: 1;
+    -webkit-border-image-slice: 1;
+    -moz-border-image-slice: 1;
+    -o-border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, rgba(232,21,64,1) 0%, rgba(133,43,193,1) 32%, rgba(56,47,126,1) 64%, rgba(38,204,221,1) 100%);
+    -webkit-border-image-source: -webkit-linear-gradient(to bottom, rgba(232,21,64,1) 0%, rgba(133,43,193,1) 32%, rgba(56,47,126,1) 64%, rgba(38,204,221,1) 100%);
+    -moz-border-image-source: -moz-linear-gradient(to bottom, rgba(232,21,64,1) 0%, rgba(133,43,193,1) 32%, rgba(56,47,126,1) 64%, rgba(38,204,221,1) 100%);
+    -o-border-image-source: -o-linear-gradient(to bottom, rgba(232,21,64,1) 0%, rgba(133,43,193,1) 32%, rgba(56,47,126,1) 64%, rgba(38,204,221,1) 100%);
+}
+
+.carousel-caption {
+    position: static !important;
+    bottom: auto !important;
+    padding-top: 3.5rem !important;
+}
+
+.carousel-caption h5 {
+    max-width: 12rem;
+    margin: auto;
+    height: 3rem;
+    font-family: neue-machina, sans-serif;
+    font-size: 1.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.copernico {font-size: 1rem !important;}
+
+.years-charneiras {
+    overflow: hidden;
+    position: absolute;
+    top: 19.5rem;
+    width: 18.75rem;
+    color: white;
+    font-family: monument-extended, sans-serif;
+    font-size: 1rem;
+}
+
+.years-charneiras > div {
+    display: flex;
+    justify-content: space-between;
+    width: 33.6rem;
+    margin-left: -7.4rem;
+}
+
+.year {display: none;}
+
+.year-prev {
+    transform: translateX(7.5rem);
+    -webkit-transition: .6s ease-in-out !important;
+    -moz-transition: .6s ease-in-out !important;
+    -o-transition: .6s ease-in-out !important;
+    transition: .6s ease-in-out !important;
+}
+
+.year-next {
+    transform: translateX(-7.5rem);
+    -webkit-transition: .6s ease-in-out !important;
+    -moz-transition: .6s ease-in-out !important;
+    -o-transition: .6s ease-in-out !important;
+    transition: .6s ease-in-out !important;
+}
+
+.showing, .year-prev, .year-next {display: block;}
+
+.grey {
+    color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+#charneiras {
+    margin-right: 7.125rem;
+    margin-left: 3.75rem;
+    margin-top: 7.8rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: auto !important;
+    bottom: auto !important;
+    top: 22.25rem;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+
+.carousel-control-prev-icon {background-image: url("/static/charneiras/prev.svg") !important;}
+   
+.carousel-control-next-icon {background-image: url("/static/charneiras/next.svg") !important;}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+h1 {
+    font-family: neue-machina, sans-serif;
+    font-size: 3.9rem;
+    color: white;
+    margin-bottom: 3.375rem;
+}
+
+#text-content > div {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 3.5rem;
+}
+
+.loading {
+    filter: blur(5px);
+    transform: scale(1.2);
+}
+
+.img-container {overflow: hidden;}
+
+@media (max-height: 800px) and (min-width: 769px) {
+    html {font-size: 14px;}
+
+    .content {margin-top: 4rem;}
+
+    .content p {margin-bottom: 1.5rem;}
+}
+
+@media (orientation: portrait) {
+    .content {
+        display: block !important;
+        margin: 0 !important;
+        width: 100%;
+        padding: 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .content p {
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    #charneiras, .carousel-inner, .years-charneiras {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #charneiras {
+        margin: 3rem 0 0 0;
+        width: fit-content;
+    }
+
+    #text-content > div {max-height: fit-content;}
+}
+
+@media (min-width: 1200px) and (orientation: portrait){
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .content {
+        display: block !important;
+        margin: 0 !important;
+        width: 100%;
+        padding: 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .content p {
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    #charneiras, .carousel-inner, .years-charneiras {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #charneiras {
+        margin: 3rem 0 0 0;
+        width: fit-content;
+    }
+
+    #text-content > div {max-height: fit-content;}
+}
+
+@media (max-width: 767.98px) {
+    .content {
+        display: block !important;
+        margin: 0 !important;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content p {
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    #charneiras, .carousel-inner, .years-charneiras {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #charneiras {
+        margin: 1.5rem 0 0 0;
+        width: fit-content;
+    }
+
+    #text-content > div {max-height: fit-content;}
+}

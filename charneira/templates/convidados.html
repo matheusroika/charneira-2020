@@ -1,0 +1,1425 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/convidados.css') }}?v=7">
+{% endblock %}
+
+{% block body %}
+<div class='content'>
+    <div id='text-content'>
+        <h1>Convidados</h1>
+        <div class='activity Workshops'>
+            <a class='Workshops' id="workshops-button" aria-controls="workshops-lista" role="button" aria-expanded="true" aria-disabled="true" tabindex="0">
+                <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                <h2>Workshops</h2>
+            </a>
+            <ul class='lista-convidados active' id="workshops-lista" role="region" aria-labelledby="workshops-button"> 
+                <li><a class="BolivarEscobar active-lista" aria-controls="BolivarEscobar" aria-expanded="true" aria-disabled="true" role="button" tabindex="0">Bolívar_Escobar</a></li>
+                <li><a class="CarolineFraga" aria-controls="CarolineFraga" aria-expanded="false" role="button" tabindex="0">Caroline_Fraga</a></li>
+                <li><a class="CarolineLins" aria-controls="CarolineLins" aria-expanded="false" role="button" tabindex="0">Caroline_Lins</a></li>
+                <li><a class="ClaudioSilva" aria-controls="ClaudioSilva" aria-expanded="false" role="button" tabindex="0">Claudio_Silva</a></li>
+                <li><a class="FernandaNadal" aria-controls="FernandaNadal" aria-expanded="false" role="button" tabindex="0">Fernanda_Nadal</a></li>
+                <li><a class="Revolution" aria-controls="Revolution" aria-expanded="false" role="button" tabindex="0">Escola_Revolution</a></li>
+                <li><a class="GalDesign" aria-controls="GalDesign" aria-expanded="false" role="button" tabindex="0">Gal_Design</a></li>
+                <li><a class="GuilhermeFonseca" aria-controls="GuilhermeFonseca" aria-expanded="false" role="button" tabindex="0">Guilherme_Fonseca</a></li>
+                <li><a class="Brainstorm" aria-controls="Brainstorm" aria-expanded="false" role="button" tabindex="0"> Brainstorm_Academy</a></li>
+                <li><a class="NicholasSteinmetz" aria-controls="NicholasSteinmetz" aria-expanded="false" role="button" tabindex="0">Nicholas_Steinmetz</a></li>
+                <li><a class="OscarTeixeira" aria-controls="OscarTeixeira" aria-expanded="false" role="button" tabindex="0">Oscar_Teixeira</a></li>
+            </ul>
+        </div>
+        <div class='activity Palestras'>
+            <a class='Palestras' id="palestras-button" aria-controls="palestras-lista" role="button" aria-expanded="false" tabindex="0">
+                <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                <h2>Palestras</h2>
+            </a>
+            <ul class='lista-convidados' id="palestras-lista" role="region" aria-labelledby="palestras-button">
+                <li><a class="AnaPaulaHoltz" aria-controls="AnaPaulaHoltz" aria-expanded="false" role="button" tabindex="0">Ana_Paula_Holtz</a></li>
+                <li><a class="AnaValeria" aria-controls="AnaValeria" aria-expanded="false" role="button" tabindex="0">Ana_Valéria</a></li>
+                <li><a class="DaniCamargo" aria-controls="DaniCamargo" aria-expanded="false" role="button" tabindex="0">Dani_Camargo</a></li>
+                <li><a class="DemianBorba" aria-controls="DemianBorba" aria-expanded="false" role="button" tabindex="0">Demian_Borba</a></li>
+                <li><a class="EmilioBeltrami" aria-controls="EmilioBeltrami" aria-expanded="false" role="button" tabindex="0">Emilio_Beltrami</a></li>
+                <li><a class="GiseleRaulik" aria-controls="GiseleRaulik" aria-expanded="false" role="button" tabindex="0">Gisele_Raulik</a></li>
+                <li><a class="GustavoTeixeira" aria-controls="GustavoTeixeira" aria-expanded="false" role="button" tabindex="0">Gustavo_Teixeira</a></li>
+                <li><a class="LeandroCatapam" aria-controls="LeandroCatapam" aria-expanded="false" role="button" tabindex="0">Leandro_Catapam</a></li>
+                <li><a class="LeonardoBuggy" aria-controls="LeonardoBuggy" aria-expanded="false" role="button" tabindex="0">Leonardo_Buggy</a></li>
+                <li><a class="LucasRibeiro" aria-controls="LucasRibeiro" aria-expanded="false" role="button" tabindex="0">Lukthis_Studio</a></li>
+                <li><a class="MAPO" aria-controls="MAPO" aria-expanded="false" role="button" tabindex="0">MAPÔ_Design</a></li>
+                <li><a class="MarceloPimenta" aria-controls="MarceloPimenta" aria-expanded="false" role="button" tabindex="0">Marcelo_Pimenta</a></li>
+                <li><a class="MarianneRohrig" aria-controls="MarianneRohrig" aria-expanded="false" role="button" tabindex="0">Marianne_Rohrig</a></li>
+                <li><a class="RafaelCamargo" aria-controls="RafaelCamargo" aria-expanded="false" role="button" tabindex="0">Rafael_Camargo</a></li>
+                <li><a class="RosangelaAraujo" aria-controls="RosangelaAraujo" aria-expanded="false" role="button" tabindex="0">Rosângela_Araújo</a></li>
+                <li><a class="SlashEducation" aria-controls="SlashEducation" aria-expanded="false" role="button" tabindex="0">Slash_Education</a></li>
+                <li><a class="TamaraGuzman" aria-controls="TamaraGuzman" aria-expanded="false" role="button" tabindex="0">Tâmara_Guzmán</a></li>
+                <li><a class="WillNunes" aria-controls="WillNunes" aria-expanded="false" role="button" tabindex="0">Will_Nunes</a></li>
+            </ul>
+        </div>
+        <div class='activity MesasRedondas'>
+            <a class='MesasRedondas' id="mesasredondas-button" aria-controls="mesasredondas-lista" role="button" aria-expanded="false" tabindex="0">
+                <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                <h2>Mesas_Redondas</h2>
+            </a>
+            <ul class='lista-convidados' id="mesasredondas-lista" role="region" aria-labelledby="mesasredondas-button">
+                <li><a class="AdrianaBetiol" aria-controls="AdrianaBetiol" aria-expanded="false" role="button" tabindex="0">Adriana_Betiol</a></li>
+                <li><a class="AgathaMoraes" aria-controls="AgathaMoraes" aria-expanded="false" role="button" tabindex="0">Agatha_Moraes</a></li>
+                <li><a class="AnaValeria2" aria-controls="AnaValeria2" aria-expanded="false" role="button" tabindex="0">Ana_Valéria</a></li>
+                <li><a class="CamilaRibeiro" aria-controls="CamilaRibeiro" aria-expanded="false" role="button" tabindex="0">Camila_Ribeiro</a></li>
+                <li><a class="CarolinaAndujar" aria-controls="CarolinaAndujar" aria-expanded="false" role="button" tabindex="0">Carolina_Andujar</a></li>
+                <li><a class="SpiritAnimation" aria-controls="SpiritAnimation" aria-expanded="false" role="button" tabindex="0">Spirit_Animation</a></li>
+                <li><a class="GabrielaAlmeida" aria-controls="GabrielaAlmeida" aria-expanded="false" role="button" tabindex="0">Gabriela_Almeida</a></li>
+                <li><a class="GiuliaFagundes" aria-controls="GiuliaFagundes" aria-expanded="false" role="button" tabindex="0">Giulia_Fagundes</a></li>
+                <li><a class="KarlaKeiko" aria-controls="KarlaKeiko" aria-expanded="false" role="button" tabindex="0">Karla_Keiko</a></li>
+                <li><a class="LaryTertuliano" aria-controls="LaryTertuliano" aria-expanded="false" role="button" tabindex="0">Lary_Tertuliano</a></li>
+                <li><a class="LucasRibeiro2" aria-controls="LucasRibeiro2" aria-expanded="false" role="button" tabindex="0">Lucas_Ribeiro</a></li>
+                <li><a class="PaulaMosca" aria-controls="PaulaMosca" aria-expanded="false" role="button" tabindex="0">Paula_Mosca</a></li>
+                <li><a class="Katsukazan" aria-controls="Katsukazan" aria-expanded="false" role="button" tabindex="0">Katsukazan</a></li>
+                <li><a class="RafaelZem" aria-controls="RafaelZem" aria-expanded="false" role="button" tabindex="0">Rafael_Zem</a></li>
+                <li><a class="DogzillaStudio" aria-controls="DogzillaStudio" aria-expanded="false" role="button" tabindex="0">Dogzilla_Studio</a></li>
+                <li><a class="WillNunes2" aria-controls="WillNunes2" aria-expanded="false" role="button" tabindex="0">Will_Nunes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="convidados">
+        <div class="BolivarEscobar convidado active" id="BolivarEscobar">
+            <div class="convidado-content">
+                    <div class="descricao">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/BolivarEscobar.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/BolivarEscobar.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Bolívar Escobar" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/BolivarEscobar.jpg') }}" data-src="{{ url_for('static', filename='convidados/BolivarEscobar.jpg') }}">
+                            </picture>
+                        </div>
+                        <h2>BOLÍVAR_ESCOBAR</h2>
+                        <a href='https://www.instagram.com/bolivar_escobar/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@bolivar_escobar</p></a>
+                        <p>Mestre em Design de Sistemas de Informação pela UFPR, Bolivar trabalha com Design gráfico e digital desde 2010, desenvolvendo projetos de pesquisa sobre infográficos, desenvolvimento de serviços, game design e design da informação. Além disso ele também faz stand-up, acredita?</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Introdução ao Design da Informação</h2>
+                    <p>Nesse workshop, Bolívar vai te mostrar todas as dicas e técnicas aplicadas na construção de infográficos e como criar algo inesquecível utilizando princípios do design de informação.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="CarolineFraga convidado" id="CarolineFraga">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolineFraga.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolineFraga.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Caroline Fraga" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CarolineFraga.jpg') }}" data-src="{{ url_for('static', filename='convidados/CarolineFraga.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>CAROLINE_FRAGA</h2>
+                        <a href='https://www.instagram.com/caarolmare/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@caarolmare</p></a>
+                        <p>Caroline Fraga, nome artístico de Maré, é do Rio de Janeiro. Recém formada em Design Gráfico pela Unicarioca onde também fez iniciação científica em Design, através da linha de pesquisa: Educação e novas tecnologias digitais. É especializada em ilustração vetorial atuando também como freelancer. Suas obras são sempre voltadas para o universo feminino, gosta de exaltar a beleza feminina e admira como as mulheres podem ser fortes.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Ilustração Vetorial</h2>
+                    <p>Neste workshop os alunos irão aprender técnicas de ilustração vetorial e colorização no Adobe Illustrator.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="CarolineLins convidado" id="CarolineLins">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolineLins.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolineLins.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Caroline Lins" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CarolineLins.jpg') }}" data-src="{{ url_for('static', filename='convidados/CarolineLins.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>CAROLINE_LINS</h2>
+                        <a href='https://www.instagram.com/carolinelinsph/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@carolinelinsph</p></a>
+                        <p>Caroline Lins, acadêmica de jornalismo pela universidade federal do Amazonas, atua há 7 anos como fotógrafa de retratos, com foco em fotografia criativa e de pessoas. Já teve suas obras destacadas em vários veículos de comunicação. Atualmente trabalha com criação de conteúdo online voltado a fotografia e retratos.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Processos criativos na fotografia e edição</h2>
+                    <p>O workshop abrange a relação da fotografia com as novas mídias e plataformas de compartilhamento de imagens, um guia para concepção de conceitos e desenvolvimento de uma fotografia única utilizando artifícios comuns, uma análise da luz e da mensagem passada pela fotografia a partir dela, além de dicas importantes de edição em programas como Photoshop e Lightroom, visando unir fotografia e edição para que ambas se complementem em um mesmo conceito na imagem.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="ClaudioSilva convidado" id="ClaudioSilva">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/ClaudioSilva.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/ClaudioSilva.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Claudio Silva" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/ClaudioSilva.jpg') }}" data-src="{{ url_for('static', filename='convidados/ClaudioSilva.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>CLAUDIO_SILVA</h2>
+                        <a href='https://www.instagram.com/claudio.s_sculpture/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@claudio.s_sculpture</p></a>
+                        <p>Claudio Silva, formado em Gravura pela EMBAP PR e Especialista em Desenvolvimento de Jogos Digitais pela Universidade Positivo, foi professor de modelagem 3D no curso de Animação Digital PUC/Bcit Canadá, é professor de modelagem 3D desde 2013 no Curso de Jogos Digitais da Universidade Positivo, atua no mercado com computação gráfica nas áreas de Arquitetura, Design, Publicidade, esculturas tradicionais, digitalização e réplica de monumentos desde 2001. Atualmente trabalha para o mercado nacional, americano e europeu com modelagem de toys, miniaturas 3D para board games e estátuas para colecionadores privados.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Escultura e Modelagem 3D</h2>
+                    <p>Neste workshop serão apresentados alguns cases de convergência do tradicional com o digital no processo de produção de personagens, réplicas de monumentos e objetos em geral, da captura a impressão 3D das peças. Em seguida Claudio fará uma demonstração de modelagem digital no ZBrush, onde irá apresentar um pouco de sua forma de modelar e pensar o processo de produção que usa em seu dia a dia.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="FernandaNadal convidado" id="FernandaNadal">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/FernandaNadal.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/FernandaNadal.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Fernanda Nadal" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/FernandaNadal.jpg') }}" data-src="{{ url_for('static', filename='convidados/FernandaNadal.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>FERNANDA_NADAL</h2>
+                        <a href='https://www.instagram.com/fernadal/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@fernadal</p></a>
+                        <p>Com Graduação em Administração de Empresas, Pós-graduação em Moda e Cultura pela UEL (Universidade Estadual de Londrina), Especialização em Designer de Calçados, e com vários cursos de aperfeiçoamento na área de moda; Fernanda já foi aluna de Glória Kalil, Marie Rucki (Studio Berçot Paris), Glória Coelho, entre outros. E com uma formação específica na área de bordado na Ecole Lesage (Paris).</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Bordado em Pedraria</h2>
+                    <p>Neste workshop estaremos vendo um pouco sobre história do bordado e como ele pode agregar na sua marca, as possibilidades que ele trás e seu mercado.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="GalDesign convidado" id="GalDesign">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GalDesign.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GalDesign.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Khetlin_Gomes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GalDesign.jpg') }}" data-src="{{ url_for('static', filename='convidados/GalDesign.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GAL_DESIGN - KHETLIN_GOMES</h2>
+                        <a href='https://www.instagram.com/gal_design/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@gal_design</p></a>
+                        <p>Khetlin Gomes - formada em Design de Moda pela PUCPR. Durante a graduação descobriu uma paixão pela união do design contemporâneo à tradição do feito à mão e técnicas artesanais, além do interesse por métodos mais sustentáveis de criar. Hoje atua na 'Gal Design' e na 'GAL curvy&plus' - ambas marcas autorais onde esta a frente de todos os processos de pesquisa, criação, desenvolvimento, confecção e comunicação com o consumidor final. Também da workshops da área de bordado, slowfactory, criação e gestão.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Upcycling</h2>
+                    <p>O workshop irá abordar conceitos básicos de upcycling (definições, exemplos, formas de criação), passando por técnicas de upcycling e metodologias que auxiliam na criação afim de obter o máximo de aproveitamento dos insumos. Após a parte teórica, vamos criar um acessório único utilizando tecidos de retalhos e técnica de transformação textil, demonstrando na prática as formas de ressignificar e dar um novo ciclo ao que havia chego no fim de sua vida útil.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="GuilhermeFonseca convidado" id="GuilhermeFonseca">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Guilherme Fonseca" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GuilhermeFonseca.jpg') }}" data-src="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GUILHERME_FONSECA</h2>
+                        <a><p class="rede-social"></p></a>
+                        <p>Guilherme Fonseca é pós–graduado em roteiro para cinema e televisão na FAAP, é formado em letras e tem experiência de 20 anos em criação de animações e histórias para o público jovem, além de criar storyboards para cinema e TV.<br><br>
+
+                            Trabalhou como ilustrador e animador no programa Rá-Tim-Bum - TV Cultura. Seu projeto de história em quadrinhos Estação Luz, foi premiado na edição de 2008 no Estado de São Paulo (PROAC). Em 2012 Publicou Automatic Lover, coletânea de histórias futuristas pela Devir, em 2017 foi novamente premiado pelo edital de quadrinhos (PROAC) no estado de São Paulo com a adaptação em quadrinhos de "O crime do restaurante chinês".<br><br>
+                            
+                            É autor da websérie Espia Aí!, premiada pelo Concurso de Webséries da Prefeitura do Estado de São Paulo. É proprietário da Hiperquímica Produções, onde atende ao mercado cultural e publicitário.</p>
+                    </div>    
+                <div class="atracao">
+                    <h2>Produção de Animação</h2>
+                    <p>Neste workshop Gui Fonseca irá apresentar os processos que envolvem o desenvolvimento de animações para TV, games e cinema. Nesta oficina serão abordados os diversos aspectos que envolvem a criação e planejamento de animações, sejam elas para o mercado publicitário ou de entretenimento, apresentando também aspectos de custo e mercado e cases de sucesso.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="Brainstorm convidado" id="Brainstorm">
+            <div class="convidado-content">
+                <div id="carouselBrainstorm" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/BrainstormAcademy.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/BrainstormAcademy.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/BrainstormAcademy.jpg') }}" data-src="{{ url_for('static', filename='convidados/BrainstormAcademy.jpg') }}" alt="Logotipo da Brainstorm Academy">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/MateusFerreira.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/MateusFerreira.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/MateusFerreira.jpg') }}" data-src="{{ url_for('static', filename='convidados/MateusFerreira.jpg') }}" alt="Foto do Mateus Ferreira">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBrainstorm" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBrainstorm" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>BRAINSTORM_ACADEMY - MATEUS_FERREIRA</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/brainstorm.academy/' target='_blank' rel='noopener noreferrer'><span>@brainstorm.academy</span></a>
+                        <a href='https://www.instagram.com/mateus.wmv/' target='_blank' rel='noopener noreferrer'><span>@mateus.wmv</span></a></p>
+                        <p>Mateus Ferreira é sócio e co-fundador da produtora B.WMV Audiovisual em Londrina-PR, responsável por criar e manter a brainstorm.academy - escola de audiovisual online com mais de 46 mil alunos - e o Brainstorm Tutoriais, um portal sobre audiovisual com mais de 950 mil seguidores nas redes sociais. Videomaker e editor há 9 anos, lidera um time de 20 pessoas na B.WMV e já trabalhou em projetos de audiovisual e motion design para negócios locais e multinacionais. Professor especialista convidado no Lab de Audiovisual da PUC-PR Campus Maringá no MBA de Marketing Digital. Palestrante no Adobe Day Brasil em 2017 e 2018 e Youtube Global Help Contributor de 2016 a 2019.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Motion Design e a Internet</h2>
+                    <p>A internet é um universo próprio. O mundo dos creators e influencers está em alta. O mundo do marketing digital está em alta. Mas como o motion design pode se encaixar nessa realidade? Quais são as possibilidades reais de se trabalhar com motion design direcionado à internet? Conheça a trajetória da produtora B.WMV, que nasceu fazendo motion para as redes.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="NicholasSteinmetz convidado" id="NicholasSteinmetz">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/NicholasSteinmetz.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/NicholasSteinmetz.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Nicholas Steinmetz" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/NicholasSteinmetz.jpg') }}" data-src="{{ url_for('static', filename='convidados/NicholasSteinmetz.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>NICHOLAS_STEINMETZ</h2>
+                        <a href='https://www.instagram.com/d0rts/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@d0rts</p></a>
+                        <p>Nicholas Steinmetz é ilustrador, designer e artista visual. Formado em Design Gráfico pela PUCPR, atualmente atua como mediador educativo do Museu do Holocausto de Curitiba.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Oficina de Zines e Narrativas experimentais</h2>
+                    <p>Por meio de exercícios de escrita criativa e experimentação gráfica, os participantes poderão trabalhar em um pequeno zine físico ou digital em suas próprias casas.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="OscarTeixeira convidado" id="OscarTeixeira">
+            <div class="convidado-content">
+                <div class="workshop-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/OscarTeixeira.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/OscarTeixeira.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Oscar Teixeira" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/OscarTeixeira.jpg') }}" data-src="{{ url_for('static', filename='convidados/OscarTeixeira.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>OSCAR_TEIXEIRA</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/tumba_store/' target='_blank' rel='noopener noreferrer'><span>@tumba_store</span></a>
+                        <a href='https://www.instagram.com/oscarteixeira.art/' target='_blank' rel='noopener noreferrer'><span>@oscarteixeira.art</span></a></p>
+                        <p>Oscar Teixeira é mestre em Design de informação formado pela UFPR , Especialista em Gestão da Criatividade e Inovação pela Pontifícia Universidade Católica do Paraná. Graduado em Desenho Industrial Programação Visual pela Pontifícia Universidade Católica do Paraná. Professor de Direção de Arte e computaçao gráfica, e Coordenador de Pós Graduação. Trabalhou como ilustrador para diversas empresas e agências de publicidade e Design. Atualmente atua como empresario da Tumbalacatumba Store.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Ilustração para Estamparia</h2>
+                    <p>Neste workshop teremos:<br>
+                        - Desenvolvimento de estampas para estampas<br>
+                        - Tecnicas, dicas e truques para melhor aproveitamento de cores e custo final<br>
+                        - Formatos, texturas, cores e saturação.<br>
+                        - Tecnicas de vetorizaçao, colorização com os programas Adobe Photoshop, e Illustrator</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="Revolution convidado" id="Revolution">
+            <div class="convidado-content">
+                <div id="carouselRevolution" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/EscolaRevolution.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/EscolaRevolution.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/EscolaRevolution.jpg') }}" data-src="{{ url_for('static', filename='convidados/EscolaRevolution.jpg') }}" alt="Logotipo da Escola Revolution">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/VictorHarmatiuk.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/VictorHarmatiuk.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/VictorHarmatiuk.jpg') }}" data-src="{{ url_for('static', filename='convidados/VictorHarmatiuk.jpg') }}" alt="Foto do Victor Harmatiuk">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselRevolution" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselRevolution" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>ESCOLA_REVOLUTION - VICTOR_HARMATIUK</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/escolarevolution/' target='_blank' rel='noopener noreferrer'><span>@escolarevolution</span></a>
+                        <a href='https://www.instagram.com/victorhharmatiuk/' target='_blank' rel='noopener noreferrer'><span>@victorhharmatiuk</span></a></p>
+                        <p>Nascido em Curitiba, Victor Hugo Harmatiuk é ilustrador freelancer. Ao longo de sua carreira, ele trabalhou como ilustrador e Concept Artist para estúdios nacionais e internacionais em vários projetos para PC, mobile, board games, animações e anúncios publicitários. Em 2016 ele fez parte do artbook Visions of a Thousand Eyes ao lado de outros artistas renomados como James Paick, Efflan Mercier e Darek Zabrocki. Há mais de cinco anos também vem se dedicando ao ensino de pintura digital na Revolution, tendo alunos por todo o país e também do exterior.<br><br>
+                        A Revolution é uma escola que une pessoas que são guiadas pela imaginação, interessadas em criar histórias e inventar outros universos, com cursos voltados ao mundo do entretenimento, como desenho e 3D para games, animações e efeitos especiais.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Pintura Digital</h2>
+                    <p>Introdução a técnicas da ilustração digital para a criação de cenários utilizados em concept art de jogos 2D e 3D. Os participantes vão conhecer as ferramentas utilizadas no mercado de entretenimento e algumas das técnicas mais utilizadas para a criação de pinturas digitais.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+        
+        <div class="AnaPaulaHoltz convidado" id="AnaPaulaHoltz">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaPaulaHoltz.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaPaulaHoltz.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Ana Paula Holtz" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AnaPaulaHoltz.jpg') }}" data-src="{{ url_for('static', filename='convidados/AnaPaulaHoltz.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>ANA_PAULA_HOLTZ</h2>
+                        <a href='https://www.instagram.com/ulaholtz/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@ulaholtz</p></a>
+                        <p>Advogada-Designer e Designer-Advogada.
+                            Pós-graduada em Design de Interação (UP), Direito de Empresas (FGV/SP) e Direito Contratual (PUC/SP).
+                            Atua há mais de 15 anos no mercado jurídico brasileiro, sobretudo em empresas multinacionais.
+                            Especialista em contratos, compliance e gestão de risco. Consultora em projetos de legal design e facilitadora de treinamentos de design centrado no usuário.
+                    </div>
+                <div class="atracao">
+                    <h2>Legal Design</h2>
+                    <p>Já ouviu falar em Legal Design? Parece sofisticado mas é simples e intuitivo.  É uma forma de entregar serviços jurídicos do jeito que as pessoas entendem e precisam. É aplicar conceitos de Design para melhorar a experiência das pessoas com "as coisas do direito". Não é tecnologia, vai além. Não é marketing, mas pode ajudar a vender. Sua missão é descomplicar o direito.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="AnaValeria convidado" id="AnaValeria">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Ana Valéria" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AnaValeria.jpg') }}" data-src="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>ANA_VALÉRIA</h2>
+                        <a href='https://www.instagram.com/anavalerialvarez/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@anavalerialvarez</p></a>
+                        <p>Ana Valéria é formada no extinto curso de Design Digital, aqui da PUC.
+                            Hoje navega na pesquisa sobre o design e a educação e discute muito sobre a área (design de sobrancelha é design).</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Dicas de escrita: Do pensamento a Impressão</h2>
+                    <p>Dificuldades para escrever o TCC?
+                        Esta palestra irá te ajudar a esclarecer suas ideias, com técnicas para escrita de trabalhos científicos.
+                        Venha com a gente conhecer essas dicas e técnicas para encontrar o seu estilo de escrita!</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="LeandroCatapam convidado" id="LeandroCatapam">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/LeandroCatapam.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/LeandroCatapam.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Leandro Catapam" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/LeandroCatapam.jpg') }}" data-src="{{ url_for('static', filename='convidados/LeandroCatapam.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>LEANDRO_CATAPAM</h2>
+                        <a href='https://www.instagram.com/lespacedisco/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@lespacedisco</p></a>
+                        <p>Atua como designer e diretor de arte em vários materiais gráficos do âmbito cultural na cidade de Curitiba e também como professor do ensino superior. Na Pontifícia Universidade Católica do Paraná faz parte do corpo docente do curso de Graduação em Design e de cursos de especialização da instituição em disciplinas de Design Emocional e Fotografia, Cinema e Vídeo Arte. Atua também na orientação de projetos de iniciação científica da PUCPR (PIBIC) e, desde 2015, dedica-se à pesquisa artística em colagem, gifs e mininarrativas, participando de várias exposições nesse sentido, incluindo a produção de um videoclipe com tais técnicas.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>A dimensão histórica, técnica e processual da colagem em suas diversas expressões</h2>
+                    <p>A palestra aborda o tema Colagem a partir de sua origem histórica, características técnicas e de pesquisa, agregando as abordagens analógicas e digitais.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="DaniCamargo convidado" id="DaniCamargo">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/DaniCamargo.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/DaniCamargo.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Dani Camargo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/DaniCamargo.jpg') }}" data-src="{{ url_for('static', filename='convidados/DaniCamargo.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>DANI_CAMARGO</h2>
+                        <a href='https://www.instagram.com/camarkkk/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@camarkkk</p></a>
+                        <p>Dani Camargo é sócio-proprietário da CAMARK.DESIGN e é um designer formado pela PUCPR.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Design por experiência</h2>
+                    <p>500 camisetas. 01 portfólio. 70 euros.
+                        Design por experiência é uma palestra na qual Dani aproveita uma história real de três meses na Europa com sua marca de camisetas, para mostrar alguns erros que podem ser cometidos por um designer recém-formado.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="DemianBorba convidado" id="DemianBorba">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/DemianBorba.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/DemianBorba.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Demian Borba" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/DemianBorba.jpg') }}" data-src="{{ url_for('static', filename='convidados/DemianBorba.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>DEMIAN_BORBA</h2>
+                        <a href='https://www.instagram.com/demianborba/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@demianborba</p></a>
+                        <p>Um dos primeiros Product Managers do Adobe XD no Vale do Silício, Demian tem quase 20 anos de experiência em tecnologia, design, negócios, comunidade, e treinamentos. Antes da Adobe USA, ele trabalhou em empresas como PayPal, BlackBerry, UCSD, e em diversas agências digitais, incluindo sua própria: a Action Creations em San Diego, California. Demian foca Inovação, Design, Desenvolvimento, e Design Thinking. Ele também é apaixonado por surf e por sua família.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O processo de UX na Adobe</h2>
+                    <p>Demian irá compartilhar sua experiência como gerenciador de produtos na Adobe USA e sobre o processo de UX Design (experiência do usuário) nos produtos da empresa, hoje consolidada como uma referência no âmbito do design em termos de softwares de criação.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="EmilioBeltrami convidado" id="EmilioBeltrami">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/EmilioBeltrami.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/EmilioBeltrami.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Emilio Beltrami" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/EmilioBeltrami.jpg') }}" data-src="{{ url_for('static', filename='convidados/EmilioBeltrami.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>EMILIO_BELTRAMI</h2>
+                        <a><p class="rede-social"></p></a>
+                        <p>Emilio é CEO da empresa de consultoria Conect, trabalha em projetos de cooperação internacional junto com o Centro Tecnológico COSMOB na Itália. Graduado em Ciência Política Internacional, é mestre em Desenvolvimento Econômico Territorial pela Universidade Católica de Milão (Itália), atualmente trabalha no projeto de definição de cenários tecnológicos Foresight com o SEBRAE/PR, é consultor das Organização das Nações Unidas para o Desenvolvimento Industrial (UNIDO).</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Estratégias para o presente e futuro do Design</h2>
+                    <p>O que mudou no âmbito do Design nas últimas décadas? Quais fatores causaram essas mudanças? O que ainda deve mudar? O que vai causar mais mudança? Como designers, qual é o papel que assumimos? Você está protagonizando essas mudanças ou criando divergências?<br><br>
+                        Nossos convidados dialogam sobre o presente e do futuro do design, levantando perspectivas baseadas na metodologia de previsão de cenários, identificando os elementos tecnológicos das cadeias de valor relacionadas a valorização do design, necessárias para aumentar a competitividade das empresas e propondo como essas perspectivas podem se conectar com os ciclos humanos do presente, sempre em constante modificação.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="GiseleRaulik convidado" id="GiseleRaulik">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GiseleRaulik.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GiseleRaulik.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Gisele Raulik" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GiseleRaulik.jpg') }}" data-src="{{ url_for('static', filename='convidados/GiseleRaulik.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GISELE_RAULIK</h2>
+                        <a href='https://www.instagram.com/gisele_raulik/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@gisele_raulik</p></a>
+                        <p>Gisele é designer com doutorado em políticas públicas de design e mestrado em estratégias de design e inovação. Co-fundadora da DUCO Design Intelligence, atuou no Centro de Design Paraná, Design Council de Londres e Design Wales no País de Gales. Estabeleceu e coordenou o SEE Project, rede europeia para desenvolvimento de políticas de design e inovação. Atua na equipe de inovação da Celepar – Companhia de Tecnologia do Paraná, participa do conselho do CBD (Centro Brasil Design) e é vice-presidente da ProDesignPR.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Estratégias para o presente e futuro do Design</h2>
+                    <p>O que mudou no âmbito do Design nas últimas décadas? Quais fatores causaram essas mudanças? O que ainda deve mudar? O que vai causar mais mudança? Como designers, qual é o papel que assumimos? Você está protagonizando essas mudanças ou criando divergências?<br><br>
+                        Nossos convidados dialogam sobre o presente e do futuro do design, levantando perspectivas baseadas na metodologia de previsão de cenários, identificando os elementos tecnológicos das cadeias de valor relacionadas a valorização do design, necessárias para aumentar a competitividade das empresas e propondo como essas perspectivas podem se conectar com os ciclos humanos do presente, sempre em constante modificação.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="GustavoTeixeira convidado" id="GustavoTeixeira">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GustavoTeixeira.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GustavoTeixeira.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Gustavo Teixeira" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GustavoTeixeira.jpg') }}" data-src="{{ url_for('static', filename='convidados/GustavoTeixeira.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GUSTAVO_TEIXEIRA</h2>
+                        <a href='https://www.instagram.com/gustavisse/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@gustavisse</p></a>
+                        <p> Gustavo é formado no extinto curso de Design Digital, aqui da PUC.
+                            Hoje navega na pesquisa sobre o design e a educação e discute muito sobre a área (design de sobrancelha é design).</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Dicas de escrita: Do pensamento a Impressão</h2>
+                    <p>Dificuldades para escrever o TCC?
+                        Esta palestra irá te ajudar a esclarecer suas ideias, com técnicas para escrita de trabalhos científicos.
+                        Venha com a gente conhecer essas dicas e técnicas para encontrar o seu estilo de escrita!</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="LeonardoBuggy convidado" id="LeonardoBuggy">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/LeonardoBuggy.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/LeonardoBuggy.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Leonardo Buggy" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/LeonardoBuggy.jpg') }}" data-src="{{ url_for('static', filename='convidados/LeonardoBuggy.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>LEONARDO_BUGGY</h2>
+                        <a href='https://www.instagram.com/buggy_tiposdoacaso/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@buggy_tiposdoacaso</p></a>
+                        <p>Leonardo Buggy é mestre em Design pela Universidade Federal de Pernambuco (UFPE) e especialista em Gestão de Empresas pela Fundação Dom Cabral. Fundador da primeira digital type foundry (fundidora de tipo digital) nordestina (a Tipos do aCASO), criou o Laboratório de Impressos (Olinda), o Laboratório de Tipografia do Agreste (Caruaru) e o Laboratório de Tipografia do Ceará (Fortaleza), além de ter concebido e instalado os cursos de Design Gráfico e Design de Produto das Faculdades Integradas Barros Melo (AESO), em Olinda. É autor do considerado o primeiro livro brasileiro sobre desenho tipográfico a tratar o assunto em detalhes, O Mecotipo - Método de Ensino de Desenho Coletivo de Caracteres Tipográficos</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Desenho Tipográfico</h2>
+                    <p>Durante a palestra Buggy irá comentar sobre seu livro "O MECOtipo", abordando também com é atuar profissionalmente com tipografia.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="LucasRibeiro convidado" id="LucasRibeiro">
+            <div class="convidado-content">
+                <div id="carouselLucasRibeiro" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/LukthisStudio.jpg') }}" data-src="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" alt="Logotipo do Lukthis Studio">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/LucasRibeiro.jpg') }}" data-src="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" alt="Foto do Lucas Ribeiro">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselLucasRibeiro" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselLucasRibeiro" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>LUKTHIS_STUDIO - LUCAS_RIBEIRO </h2>
+                        <a href='https://www.instagram.com/lukthis.studio/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@lukthis.studio</p></a>
+                        <p>Lucas Ribeiro é fundador e Designer Gráfico do Lukthis Studio. Atua como Designer Gráfico a cerca de 10 anos.
+                            Mora na cidade de Porto Alegre. Desenvolve um serviço multidisciplinar e oferece aos clientes projetos de desenvolvimento de marca, direção de arte e design gráfico. Tem como forte desenvolver identidades visuais, com conhecimento aprofundado em direção de arte, tipografia e diagramação.Trabalhou com clientes nacionais e internacionais em diversos campos de atuação.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Contra Maré: Diálogos sobre Design Independente</h2>
+                    <p>Palestra em que Lucas fala sobre sua trajetória dentro do design. Como designer gráfico, seus trabalhos de desenvolvimento de marca, direção de arte e identidade visual.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="MAPO convidado" id="MAPO">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/MAPO.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/MAPO.jpg') }}" type="image/jpeg">    
+                        <img alt="Logotipo da Mapô" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MAPO.jpg') }}" data-src="{{ url_for('static', filename='convidados/MAPO.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>MAPÔ_Design - Marcela_Pontes</h2>
+                        <a href='https://www.instagram.com/use_mapo/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@use_mapo</p></a>
+                        <p>A MAPÔ é uma marca de joias autorais que mistura design, poesia e empoderamento feminino. A marca é gerenciada e construída por mulheres.
+                            As peças ganham vida através do trabalho em acrílicos, marchetaria e reutilização de madeiras descartadas, se transformando em acessórios e joias com um design único.<br><br>
+                            Todas as peças são feitas cuidadosamente a mão e cada uma delas recebe um poema que tem como impulso vivências do universo da autora, a designer Marcela Pontes.
+                            Por ser um trabalho extremamente manual, as peças possuem detalhes que as tornam únicas, como diferentes angulações, tonalidades e desenhos únicos dos veios da madeira.
+                            A marca surgiu como uma forma de expressão e auto-cura através do trabalho manual e da escrita.</p>
+                    </div>
+                
+                <div class="atracao">
+                    <h2>Processos de criação de uma marca autoral</h2>
+                    <p>Altos e baixos de uma marca em construção. Nessa palestra a proposta é contar um pouco do universo de criação de uma marca autoral partindo da experiência de uma pequena marca solta no mundo conhecida como MAPÔ. Nesse espaço abordaremos quais foram os principais aprendizados e dificuldades até então encontrados. Como encontramos nosso próprio processo de criação que mais nos permite fluir. Como buscamos nos conectar com quem acredita em jovens empreendedoras. Sinta-se a vontade para fazer parte dessa troca e quem sabe sair com algumas ideias para enfim começar sua própria marca!</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="MarceloPimenta convidado" id="MarceloPimenta">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/MarceloPimenta.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/MarceloPimenta.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Marcelo Pimenta" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MarceloPimenta.jpg') }}" data-src="{{ url_for('static', filename='convidados/MarceloPimenta.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>MARCELO_PIMENTA</h2>
+                        <a href='https://www.instagram.com/marceloapimenta/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@marceloapimenta</p></a>
+                        <p>Marcelo Pimenta é especialista em descomplicar a inovação.
+                            Tem formação em jornalismo, marketing e é mestre em planejamento estratégico.<br><br>
+                            Com 25 anos de atuação em projetos inovadores, é professor de inovação e design thinking na pós-graduação da ESPM, consultor do Sebrae Nacional e representante brasileiro em Paris junto ao NetExplo - fórum acadêmico da UNESCO que identifica as inovações que mudam o mundo.<br><br>
+                            Já realizou mais de uma centena de projetos inovadores nas maiores brasileiras incluindo Havaianas, RBS, Dell, Camargo Corrêa, Roche e, no setor de energia, RGE, CPFL e ONS. Foi curador da Campus Party São Paulo e Recife.
+                            Já realizou mais de 500 palestras em mais de 100 cidades no Brasil e no exterior.<br><br>
+                            É o criador do Mentalidades, projeto de produção semanal de conteúdo gratuito sobre inovação, empreendedorismo, criatividade e liderança nos formato de blog, o podcast, instagram e o canal no Youtube. Tem dois livros publicados “Passo-a-Passo para Negócios Inovadores” e “Ferramentas Visuais para Estrategistas” (com diferentes parceiros).<br><br>
+                            Empreendedor desde 1994, atualmente é sócio de quatro empresas que atuam nas áreas de inovação (Laboratorium), educação empreendedora (Protagonistas), inteligência de marketing (Math.Marketing) e design (IDEACT)</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Design Thinking e Inovação</h2>
+                    <p>Atualmente, criar um novo produto ou melhorar um serviço já existente se faz de um jeito diferente do que se fazia antigamente.
+                        Hoje é preciso se conectar com os clientes, criando vínculos que tragam valor percebido e fidelidade. WhatsApp, NetFlix, Spotify, DropBox são exemplos de empresas que mudaram os hábitos em seus segmentos.
+                        O jeito de pensar do design, ou design thinking, é uma abordagem que reúne cultura mais ferramentas que, baseadas em pilares como a empatia, a colaboração e a experimentação, possam gerar produtos e serviços que sejam desejados pelos clientes, tecnicamente possíveis e financeiramente lucrativos para os empresários e acessíveis pelos cliente.
+                        Nessa palestra, Marcelo Pimenta mostra que o design thinking pode ser a abordagem para revisar seus produtos e serviços para se conectar com os clientes.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="MarianneRohrig convidado" id="MarianneRohrig">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/MarianneRohrig.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/MarianneRohrig.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Marianne Rohrig" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MarianneRohrig.jpg') }}" data-src="{{ url_for('static', filename='convidados/MarianneRohrig.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>MARIANNE_ROHRIG</h2>
+                        <a href='https://www.instagram.com/mariannerohrig/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@mariannerohrig</p></a>
+                        <p>Mestranda em Gestão Ambiental na Universidade Positivo (2017-18). Possui pós graduação em Moda pela Universidade Estadual de Londrina (1998) e graduação em Desenho Industrial - Programação Visual pela Universidade Federal do Paraná (1994). <br><br>Em 2002 cursou o “Master em Fashion Show” pelo Instituto Europeo di Design em Milão (Itália). Responsável pelo desenvolvimento de coleção para a marca Positivo Oficial, um projeto que agrega alunos de cinco cursos da Universidade Positivo, que criam, desenvolvem os produtos e administram duas lojas físicas. <br><br>Entre 2010 e 2015, foi analista de negócios pleno do SENAI – Campus da Indústria (Curitiba-PR), atuando na equipe do SENAI+design como consultora nos seguintes temas: design estratégico, gestão de marca, inovação, gestão de projetos de design, pesquisa de tendências de moda, de mercado e de comportamento. <br><br>Recebeu em 2009, o prêmio internacional de inovação: Hermés de l'Innovation do European Institute for Creative Strategies&Innovation de Paris, pelo projeto 'Design contra o Crime' desenvolvido pelo SENAI Paraná. Recebeu o prêmio Ideia Brasil 2013, com o Design Estratégico para o reposicionamento de empresa de mobiliário.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O processo de pesquisa no coolhunting</h2>
+                    <p>O que são a pesquisa de tendências e o coolhunting.
+                        Como utilizá-los para entender a sociedade, o mercado e para desenvolver novos produtos.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="RafaelCamargo convidado" id="RafaelCamargo">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/RafaelCamargo.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/RafaelCamargo.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Rafael Camargo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/RafaelCamargo.jpg') }}" data-src="{{ url_for('static', filename='convidados/RafaelCamargo.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>RAFAEL_CAMARGO</h2>
+                        <a href='https://www.instagram.com/rafa.camargo3110/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@rafa.camargo3110</p></a>
+                        <p>A cada dia um microplano para salvarmos o mundo. Graduado em Design pela PUCPR e Mestre em Educação pela PUCPR, Rafael Camargo é designer, cartunista, ilustrador membro da SIB e professor da Pontifícia Universidade Católica do Paraná.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Ecodesign em chamas! Designers de transição</h2>
+                    <p>Ecodesign é uma ferramenta utilizada nas áreas de arquitetura, engenharia e design, atendendo novos modelos de produção e consumo, contribuindo para o desenvolvimento sustentável através da substituição de produtos e processos por outros menos nocivos ao meio ambiente. Rafa nos mostra os desafios e métodos de vivermos em um mundo melhor através do design com o questionamento: Como cuidar do ecossistema sendo um designer?</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+        
+        <div class="RosangelaAraujo convidado" id="RosangelaAraujo">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/RosangelaAraujo.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/RosangelaAraujo.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Rosângela Araújo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/RosangelaAraujo.jpg') }}" data-src="{{ url_for('static', filename='convidados/RosangelaAraujo.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>ROSÂNGELA_ARAÚJO</h2>
+                        <a href='https://www.instagram.com/sustentacto/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@sustentacto</p></a>
+                        <p>Especializada no design de experiências sustentáveis e presidente do Prodesign PR, a Rosângela já esteve por trás de grandes eventos culturais como o Psicodália, Tribaltech e Circuito Cultural Banco do Brasil. Hoje em dia ela é mãe, educadora, produtora e consultora de sustentabilidade para os mais diversos eventos em todo o Brasil. Que tal aprender com ela um pouco sobre como criar experiências inesquecíveis?</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Ecodesign</h2>
+                    <p>Pra quem busca soluções sustentáveis para o design de serviços, produtos e experiências.<br>
+                        → Partilha de dados e informações recentes do Brasil e do Mundo.<br>
+                        → Ferramentas de design thinking.<br>
+                        → Combinação de pensamentos criativos e analíticos.<br>
+                        → Aprimore a experiência e qualidade de serviços e produtos para seu consumidor e o mundo.<br>
+                        → Insights da última visita à Saint Etienne com a focal point mais importante do mundo em design dentro da rede de cidades criativas da Unesco.<br>
+                        → Conheça e aplique ferramentas de design thinking para o desenvolvimento de experiências sustentáveis.<br>
+                        → Conheça um olhar feminino para o papel do design para a sociedade, serviços, produtos, eventos e vivências.<br>
+                        → Instigue pensamento crítico.<br>
+                        → Conheça ferramentas que auxiliam o processo criativo.<br>
+                        → Trabalhe potencial analítico aliado à energia criativa.<br>
+                        → Experiência de troca e expansão de conhecimento e referências.<br>
+                        → Diálogos + Conteúdo Expositivo.<br>
+                        Entenda como criar e implementar soluções sustentáveis para produtos, serviços, experiências e tecnologias.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="SlashEducation convidado" id="SlashEducation">
+            <div class="convidado-content">
+                <div id="carouselSlash" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/SlashEducation.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/SlashEducation.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/SlashEducation.jpg') }}" data-src="{{ url_for('static', filename='convidados/SlashEducation.jpg') }}" alt="Logotipo da Slash Education">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/ArianeCereda.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/ArianeCereda.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/ArianeCereda.jpg') }}" data-src="{{ url_for('static', filename='convidados/ArianeCereda.jpg') }}" alt="Foto do Ariane Cereda">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselSlash" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSlash" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>SLASH_EDUCATION - ARIANE_CEREDA</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/slasheducation/' target='_blank' rel='noopener noreferrer'><span>@slasheducation</span></a>
+                        <a href='https://www.instagram.com/acriativona/' target='_blank' rel='noopener noreferrer'><span>@acriativona</span></a></p>
+                        <p>Professora e empreendedora multipotencial, Ariane é especialista em organizar ideias, produzir conteúdos e experiências e, principalmente, tirar projetos do papel.
+                            Publicitária pela PUCPR, consultora especializada em marketing pela FAE Business School, realiza consultoria em branding, desenvolve soluções criativas para pessoas e empresas e também atua como líder de projetos na startup Slash Education, coordenando a Trilha de Soft Skills Eu, não Robô.
+                            É uma entusiasta do planejamento criativo e ensina pessoas a combinarem inspiração e atitude em sua página do instagram @acriativona.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>A importância das Soft Skills</h2>
+                    <p>Soft Skills te tornam relevante.
+                        Habilidades comportamentais irão te ajudar a se diferenciar dos robôs e da inteligência artificial no mercado de trabalho.
+                        Desenvolva soft skills insubstituíveis para o profissional do futuro.</p>
+                </div>
+            </div>
+            <div class="offset-border workshop-border"></div>
+        </div>
+
+        <div class="TamaraGuzman convidado" id="TamaraGuzman">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/TamaraGuzman.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/TamaraGuzman.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Tâmara Guzmán" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/TamaraGuzman.jpg') }}" data-src="{{ url_for('static', filename='convidados/TamaraGuzman.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>TÂMARA_GUZMÁN</h2>
+                        <a href='https://www.instagram.com/tamaraguzman/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@tamaraguzman</p></a>
+                        <p>Tâmara estudou Moda na Anhembi Morumbi e FMU. Fez especialização no Curso de Imagem e Consultoria no Instituto Marangoni em Paris e também cursou Moda Francesa no PSW em Paris.
+                            Há 20 anos no mercado da Moda passou por atelier, fábricas até chegar no figurino da TV Record e fazer caracterização no programa 'Show do Tom', coordenou o programa 'What not to wear' conhecido como 'Esquadrão da Moda' no SBT, depois fez trabalhos pra outros programas de moda, como 'Troca de Estilos' no Discovery H&H, 'Desengaveta' no GNT, entre outros. Atualmente assina o styling da Isabella Fiorentino e Ticiane Pinheiro, e atua como Consultora de Estilo e Moda no processo de autoconhecimento e comunicação da identidade pela sua imagem pessoal.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Consultoria de imagem</h2>
+                    <p>Tâmara irá abordar a moda generosa e empática, comentará os 7 estilos universais, e também a apresentará o 8° estilo universal, que é um dos seus focos. Comentará sobre seu trabalho de styling com celebridades, humanizando-as.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="WillNunes convidado" id="WillNunes">
+            <div class="convidado-content">
+                <div class="palestra-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto do Will Nunes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/WillNunes.jpg') }}" data-src="{{ url_for('static', filename='convidados/WillNunes.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>WILL_NUNES</h2>
+                        <a href='https://www.instagram.com/willonunes/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@willonunes</p></a>
+                        <p>Will Nunes é um Designer Gráfico independente, que busca criar narrativas visuais para diferentes mídias. Foca-se em trabalhar com a criação de ilustrações, embalagens, editoriais e branding.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Visão sistêmica para projetos de Identidade Visual</h2>
+                    <p>Will irá abordar novos pensamentos e processos de Design para projetar identidades visuais que atendam também a requisitos e as novas exigências dos ambientes digitais. Como pensar um sistema de elementos/componentes do menor para o maior, mantendo consistência e coerência visual.</p>
+                </div>
+            </div>
+            <div class="offset-border palestra-border"></div>
+        </div>
+
+        <div class="AdrianaBetiol convidado" id="AdrianaBetiol">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/AdrianaBetiol.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/AdrianaBetiol.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Adriana Betiol" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AdrianaBetiol.jpg') }}" data-src="{{ url_for('static', filename='convidados/AdrianaBetiol.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>ADRIANA_BETIOL</h2>
+                        <a><p class="rede-social"></p></a>
+                        <p>Adriana Holtz Betiol é diretora fundadora da Interfácil Usabilidade de Sistemas, empresa de consultoria, pesquisa e treinamento em Engenharia de Usabilidade. Trabalha na área de interação humano-computador desde 1996 com projetos de desenvolvimento e avaliação de interfaces para sistemas em empresas de diversos segmentos do Brasil e do exterior. Adriana é doutora em Engenharia de Produção, na área de Ergonomia, pela UFSC.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Carreiras em UX</h2>
+                    <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="AgathaMoraes convidado" id="AgathaMoraes">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/AgathaMoraes.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/AgathaMoraes.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Agatha Moraes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AgathaMoraes.jpg') }}" data-src="{{ url_for('static', filename='convidados/AgathaMoraes.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>AGATHA_MORAES</h2>
+                        <a href='https://www.instagram.com/agathamoraesoficial/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@agathamoraesoficial</p></a>
+                        <p>Agatha é formada em design pela PUCPR e desde o começo da carreira buscou empreender. Atualmente, ela tem sua própria marca vendendo artigos para festa. Agatha diz que a formação em design diferencia seu projeto empreendedor dos demais.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Empreendedorismo e Negócios</h2>
+                    <p>A mesa redonda sobre empreendedorismo e negócios no design traz três profissionais que usaram o design como ferramenta para empreender. Nessa mesa redonda os convidados irão bater um papo sobre empreendedorismo na área de design, contando suas experiências e estudos sobre o tema. O que aprenderam e como aprenderam sobre o tema.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="AnaValeria2 convidado" id="AnaValeria2">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Ana Valéria" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AnaValeria.jpg') }}" data-src="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>ANA_VALÉRIA</h2>
+                        <a href='https://www.instagram.com/anavalerialvarez/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@anavalerialvarez</p></a>
+                        <p>Ana Valéria é Designer e Pesquisadora na área de experiência do usuário. Advogada do usuário, sempre procura proporcionar a melhor experiência possível através de processos de design. Atualmente é mestranda no PPG-Design da UFPR , mas sua necessidade de sempre estar aprendendo já a levou a diferentes lugares. Além de vários cursos livres, ela tem em sua bagagem a formação de Designer Digital aqui pela PUC, um técnico em Produção de Moda pelo TecPUC, uma especialização em Planejamento estratégico pela Uninter, e está concluindo sua mais nova especialização aqui na PUC, de Design Educacional.
+                            Sempre disposta em aprender o diferente e o novo, a Ana é o personagem do The Sims que você coloca em todas as profissões.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Carreiras em UX</h2>
+                    <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="CamilaRibeiro convidado" id="CamilaRibeiro">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/CamilaRibeiro.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/CamilaRibeiro.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Camila Ribeiro" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CamilaRibeiro.jpg') }}" data-src="{{ url_for('static', filename='convidados/CamilaRibeiro.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>CAMILA_RIBEIRO</h2>
+                        <a href='https://www.instagram.com/meelaribeiro/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@meelaribeiro</p></a>
+                        <p>Camila Ribeiro é UX Designer, especialista em Design Centrado no Usuário pela UP e atualmente mestranda em Design de Sistemas da Informação pela UFPR, trabalha com design desde 2008, sempre buscando a empatia e o olhar voltado para o usuário. Trabalhando sempre dentro da área de TI, está de volta ao ambiente acadêmico buscando soluções para implementar o conhecimento gerado na academia às práticas de mercado. Camila tem no design sua profissão e carrega seus ensinamentos e princípios para sua vida da mesma forma que traz para o design suas experiências em outras áreas: além de designer e pesquisadora, é sommelier de chá e herbalista.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Carreiras em UX</h2>
+                    <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="CarolinaAndujar convidado" id="CarolinaAndujar">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolinaAndujar.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/CarolinaAndujar.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Camila Ribeiro" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CarolinaAndujar.jpg') }}" data-src="{{ url_for('static', filename='convidados/CarolinaAndujar.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>CAROLINA_ANDUJAR</h2>
+                        <p class="rede-social"></p>
+                        <p>Carolina Andujar é responsável pelo planejamento e execução de Pesquisas Centradas no Usuário no Centro de Design da Electrolux - América Latina, e também integra a area de Comunication Design na compania, mesclando habilidades de design gráfico, instrucional e packaging.
+                            Formada em Desenho Industrial - Projeto de Produto, com pós-graduação em Design Emocional pela PUCPR, possui vasta experiência em teste de usabilidade em laboratório e campo, avaliação heurística e pesquisas ágeis com usuários para diversos tipos de produtos digitais e bens de consumo. Também possui experiência em direção de criação para marketing promocional e eventos.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Carreiras em UX</h2>
+                    <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="SpiritAnimation convidado" id="SpiritAnimation">
+            <div class="convidado-content">
+                    <div id="carouselSpiritAnimation" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="mesaredonda-image img-container">
+                                <picture>
+                                    <source data-srcset="{{ url_for('static', filename='convidados/SpiritAnimation.webp') }}" type="image/webp">
+                                    <source data-srcset="{{ url_for('static', filename='convidados/SpiritAnimation.jpg') }}" type="image/jpeg">
+                                    <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/SpiritAnimation.jpg') }}" data-src="{{ url_for('static', filename='convidados/SpiritAnimation.jpg') }}" alt="Logotipo da Spirit Animation">
+                                </picture>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="mesaredonda-image img-container">
+                                <picture>
+                                    <source data-srcset="{{ url_for('static', filename='convidados/FernandoMacedo.webp') }}" type="image/webp">
+                                    <source data-srcset="{{ url_for('static', filename='convidados/FernandoMacedo.jpg') }}" type="image/jpeg">
+                                    <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/FernandoMacedo.jpg') }}" data-src="{{ url_for('static', filename='convidados/FernandoMacedo.jpg') }}" alt="Foto do Fernando Macedo">
+                                </picture>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselSpiritAnimation" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselSpiritAnimation" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                    <div class="descricao">
+                        <h2>SPIRIT_ANIMATION_STUDIO - FERNANDO_MACEDO</h2>
+                        <a href='https://www.instagram.com/spirit_animation/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@spirit_animation</p></a>
+                        <p>A SPIRIT Animation Studios é uma premiada produtora sediada em Curitiba, Brasil. Fornece uma ampla gama de soluções criativas, com uma equipe especializada em Concept Design, Pré-Visualizações, Animações (2D/3D), Ilustrações, Motion Design, Efeitos Visuais, Storytelling, Realidade Virtual e até produção de App's e Advergames para qualquer plataforma. No bate-papo, quem representa a Spirit é Fernando Macedo, fundador do SPIRIT Animation Studios. No American Film Market (AFM) em Los Angeles, Fernando, o fundador e escritor principal do SPIRIT foi selecionado para o Pitch oficial com seu roteiro 'ROSIE & BEAR', um recurso de animação CGI atualmente em pré-produção, junto com outras seis séries animadas.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O mercado da animação e tendências futuras de traço e forma</h2>
+                    <p>Dogzilla Studio e Spirit Animation conversam nessa mesa redonda sobre o mercado da animação. Nele, os convidados colocarão suas opiniões próprias sobre o mercado em que atuam. O que eles acham que são tendências futuras de traço e forma e por que?</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="GabrielaAlmeida convidado" id="GabrielaAlmeida">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GabrielaAlmeida.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GabrielaAlmeida.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Gabriela Almeida" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GabrielaAlmeida.jpg') }}" data-src="{{ url_for('static', filename='convidados/GabrielaAlmeida.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GABRIELA_ALMEIDA</h2>
+                        <a href='https://www.instagram.com/gabischmidt__/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@gabischmidt__</p></a>
+                        <p>Gabriela atua em projetos de branding e identidade visual, ilustração, estamparia, editorial e lettering. Desta forma, ela cria suas artes e sua marca. Assim, ela participa de feiras de design, economia criativa. Ela diz que gosta de mostrar através do seu trabalho a diversidade e a força das mulheres.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O feminino na hora de empreender</h2>
+                    <p>Neste encontro, as convidadas irão abordar o lado feminino na hora de empreender. Elas sentiram alguma dificuldade por ser mulher? Acham que os homens têm certa vantagem na hora de começar seu próprio negócio ou há igualdade nesse ramo?</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="GiuliaFagundes convidado" id="GiuliaFagundes">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/GiuliaFagundes.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/GiuliaFagundes.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Giulia Fagundes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GiuliaFagundes.jpg') }}" data-src="{{ url_for('static', filename='convidados/GiuliaFagundes.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>GIULIA_FAGUNDES</h2>
+                        <a href='https://www.instagram.com/giuliafagundes______/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@giuliafagundes______</p></a>
+                        <p>Giulia Fagundes faz parte da equipe do Daó, estúdio especializado em design gráfico e digital, e localizado em São Paulo. O estúdio foi recentemente premiado no Latin American Design Awards e no Brasil Design Award e teve trabalhos selecionados na 12ª Bienal Brasileira de Design Gráfico.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>A influência e impacto da cultura afro-brasileira no Design</h2>
+                    <p>Neste encontro, os convidados para a mesa redonda irão abordar a experiência e perspectiva individuais de cada acerca de como a cultura afro-brasileira tem um peso em seus trabalhos, e como essa influência impacta o cenário brasileiro do design.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="KarlaKeiko convidado" id="KarlaKeiko">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/KarlaKeiko.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/KarlaKeiko.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Karla Keiko" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/KarlaKeiko.jpg') }}" data-src="{{ url_for('static', filename='convidados/KarlaKeiko.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>KARLA_KEIKO</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/o.i.d.e/' target='_blank' rel='noopener noreferrer'><span>@o.i.d.e</span></a>
+                        <a href='https://www.instagram.com/k.keiko.m/' target='_blank' rel='noopener noreferrer'><span>@k.keiko.m</span></a></p>
+                        <p>Karla Keiko, empreendedora e criativa do restaurante Oidē, um dos maiores pontos culturais da culinária japonesa em Curitiba. Aberto em 22 de maio 2019, além das refeições o espaço fundado oferece palestras, cursos e eventos. Karla e Will (fundadores e sócios) procuram sempre manter as tradições da comida caseira japonesa, proporcionando uma experiência única e extraordinária para o cliente.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O feminino na hora de empreender</h2>
+                    <p>Neste encontro, as convidadas irão abordar o lado feminino na hora de empreender. Elas sentiram alguma dificuldade por ser mulher? Acham que os homens têm certa vantagem na hora de começar seu próprio negócio ou há igualdade nesse ramo?</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="LaryTertuliano convidado" id="LaryTertuliano">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/LaryTertuliano.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/LaryTertuliano.jpg') }}" type="image/jpeg">    
+                        <img alt="Foto da Lary Tertuliano" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/LaryTertuliano.jpg') }}" data-src="{{ url_for('static', filename='convidados/LaryTertuliano.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>LARY_TERTULIANO</h2>
+                        <a href='https://www.instagram.com/dsgnetudo/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@dsgnetudo</p></a>
+                        <p>Lary Tertuliano adora aprender sobre Design e Tecnologia e compartilhar o que aprende com seu time e no projeto pessoal Design é tudo. Ela é designer e desenvolvedora e atua como UX Researcher na Dextra Digital. Trabalha remotamente em um time multidisciplinar com uma centena de pessoas, responsáveis pela Experiência Digital de mais de 82 milhões de clientes da Claro Brasil. Juntos têm o desafio de manter uma cultura ágil, em uma das empresas mais tradicionais do setor de telecomunicações da América Latina.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Carreiras em UX</h2>
+                    <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="LucasRibeiro2 convidado" id="LucasRibeiro2">
+            <div class="convidado-content">
+                <div id="carouselLucasRibeiro2" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/LukthisStudio.jpg') }}" data-src="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" alt="Logotipo do Lukthis Studio">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/LucasRibeiro.jpg') }}" data-src="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" alt="Foto do Lucas Ribeiro">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselLucasRibeiro2" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselLucasRibeiro2" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>LUKTHIS_STUDIO - LUCAS_RIBEIRO</h2>
+                        <a href='https://www.instagram.com/lukthis.studio/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@lukthis.studio</p></a>
+                        <p>Lukthis, representado por Lucas Ribeiro, é um estúdio criativo de Porto Alegre que oferece desenvolvimento de marcas, direção de arte e design gráfico infundido de cultura.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>A influência e impacto da cultura afro-brasileira no Design</h2>
+                    <p>Neste encontro, os convidados para a mesa redonda irão abordar a experiência e perspectiva individuais de cada acerca de como a cultura afro-brasileira tem um peso em seus trabalhos, e como essa influência impacta o cenário brasileiro do design.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="PaulaMosca convidado" id="PaulaMosca">
+            <div class="convidado-content">
+                <div id="carouselMosca" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/MoscaCeramica.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/MoscaCeramica.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/MoscaCeramica.jpg') }}" data-src="{{ url_for('static', filename='convidados/MoscaCeramica.jpg') }}" alt="Logotipo da Mosca Cerâmica">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/PaulaMosca.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/PaulaMosca.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/PaulaMosca.jpg') }}" data-src="{{ url_for('static', filename='convidados/PaulaMosca.jpg') }}" alt="Foto da Paula Mosca">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselMosca" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselMosca" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>MOSCA_CERÂMICA - PAULA_MOSCA</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/moscaceramica/' target='_blank' rel='noopener noreferrer'><span>@moscaceramica</span></a>
+                        <a href='https://www.instagram.com/paulamsca/' target='_blank' rel='noopener noreferrer'><span>@paulamsca</span></a></p>
+                        <p>Paula Mosca é a ceramista responsável pelo ateliê Mosca Cerâmica, na cidade Curitiba. Descobriu a cerâmica em 2014, quando fez o primeiro curso de modelagem manual em Maringá e, após se mudar para Curitiba deu continuidade na área, principalmente na modelagem no torno, o qual se apaixonou e nunca mais largou.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O feminino na hora de empreender</h2>
+                    <p>Neste encontro, as convidadas irão abordar o lado feminino na hora de empreender. Elas sentiram alguma dificuldade por ser mulher? Acham que os homens têm certa vantagem na hora de começar seu próprio negócio ou há igualdade nesse ramo?</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="Katsukazan convidado" id="Katsukazan">
+            <div class="convidado-content">
+                <div id="carouselKatsukazan" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/Katsukazan.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/Katsukazan.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/Katsukazan.jpg') }}" data-src="{{ url_for('static', filename='convidados/Katsukazan.jpg') }}" alt="Logotipo da Katsukazan">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/PriscilaSabino.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/PriscilaSabino.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/PriscilaSabino.jpg') }}" data-src="{{ url_for('static', filename='convidados/PriscilaSabino.jpg') }}" alt="Foto da Priscila Sabino">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselKatsukazan" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselKatsukazan" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>KATSUKAZAN - PRISCILA_SABINO</h2>
+                        <a href='https://www.instagram.com/katsukazan/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@katsukazan</p></a>
+                        <p>Katsukazan é uma marca conhecida no mercado, produzindo mochilas, pochetes, bolsas, entre outros. Um Projeto que iniciou em 2017, tomando força em 2018. Quem vai representar a marca é Priscila Sabino, uma das criadoras. Em 2017, Priscila Sabino e Guilherme Akio se juntaram, misturaram, conversaram, e criaram a Katsukazan em suas mentes e ela existe. Uma marca que representa o questionamento do uso e do convencional. Uma investigação mutável das formas, das cores e de tudo aqui. Se mostrar o novo para o novo, já visto, não se sabe onde. Viemos de curiosos.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Empreendedorismo e Negócios</h2>
+                    <p>A mesa redonda sobre empreendedorismo e negócios no design traz três profissionais que usaram o design como ferramenta para empreender. Nessa mesa redonda os convidados irão bater um papo sobre empreendedorismo na área de design, contando suas experiências e estudos sobre o tema. O que aprenderam e como aprenderam sobre o tema.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="RafaelZem convidado" id="RafaelZem">
+            <div class="convidado-content">
+                <div id="carouselPortoBureau" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/RafaelZem.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/RafaelZem.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/RafaelZem.jpg') }}" data-src="{{ url_for('static', filename='convidados/RafaelZem.jpg') }}" alt="Foto do RafaelZem">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/PortoBureau.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/PortoBureau.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/PortoBureau.jpg') }}" data-src="{{ url_for('static', filename='convidados/PortoBureau.jpg') }}" alt="Logotipo da Porto Bureau">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselPortoBureau" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPortoBureau" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>RAFAEL_ZEM - PORTO_BUREAU</h2>
+                        <a href='https://www.instagram.com/portobureau/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@portobureau</p></a>
+                        <p>Rafael é Designer gráfico graduado em 2007 pela PUC-PR, pós-graduado em Gestão de Marca pela Universidade Positivo. Já atendeu clientes como Governo do Paraná, GRPCOM, Prefeitura de Curitiba, entre outros. Ele fundou a agência de design e comunicação visual Porto Bureau.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>Empreendedorismo e Negócios</h2>
+                    <p>A mesa redonda sobre empreendedorismo e negócios no design traz três profissionais que usaram o design como ferramenta para empreender. Nessa mesa redonda os convidados irão bater um papo sobre empreendedorismo na área de design, contando suas experiências e estudos sobre o tema. O que aprenderam e como aprenderam sobre o tema.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="DogzillaStudio convidado" id="DogzillaStudio">
+            <div class="convidado-content">
+                <div id="carouselDogzillaStudio" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/DogzillaStudio.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/DogzillaStudio.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/DogzillaStudio.jpg') }}" data-src="{{ url_for('static', filename='convidados/DogzillaStudio.jpg') }}" alt="Logotipo do Dogzilla Studio">
+                            </picture>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="mesaredonda-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/WalkirFernandes.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/WalkirFernandes.jpg') }}" type="image/jpeg">
+                                <img class="lazy" class="d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/WalkirFernandes.jpg') }}" data-src="{{ url_for('static', filename='convidados/WalkirFernandes.jpg') }}" alt="Foto do Walkir Fernandes">
+                            </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselDogzillaStudio" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselDogzillaStudio" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+                    <div class="descricao">
+                        <h2>DOGZILLA_STUDIO - WALKIR_FERNANDES</h2>
+                        <p class="rede-social"><a href='https://www.instagram.com/dogzillastudio/' target='_blank' rel='noopener noreferrer'><span>@dogzillastudio</span></a>
+                        <a href='https://www.instagram.com/walkirfernandes/' target='_blank' rel='noopener noreferrer'><span>@walkirfernandes</span></a></p>
+                        <p>Dogzilla Studio é uma empresa especializada em produção de animação, ilustração e quadrinhos. Com mais de 12 anos de experiência e profissionais altamente capacitados, atua no mercado editorial, publicitário e de entretenimento. Quem representará o studio é Walkir Fernandes, co-fundador da produtora de animação Dogzilla Studio. <br>Atuou em produções de animação para longa-metragens, séries e curta-metragens premiados no Brasil e exterior. Destaque para os prêmios de Melhor Curta-metragem no 47º Festival de Cinema de Gramado, Melhor Curta-metragem segundo a crítica carioca no 27º Animamundi, Prêmio Canal Brasil no 23º Cine-PE, AnimaTV, 33º Eko Film Festival, Green Nation Fest e duas indicações no Grande Prêmio do Cinema Brasileiro. Atualmente dirige séries de animação para o mercado nacional e internacional.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>O mercado da animação e tendências futuras de traço e forma</h2>
+                    <p>Dogzilla Studio e Spirit Animation conversam nessa mesa redonda sobre o mercado da animação. Nele, os convidados colocarão suas opiniões próprias sobre o mercado em que atuam. O que eles acham que são tendências futuras de traço e forma e por que?</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+
+        <div class="WillNunes2 convidado" id="WillNunes2">
+            <div class="convidado-content">
+                <div class="mesaredonda-image img-container">
+                    <picture>
+                        <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.webp') }}" type="image/webp">
+                        <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}" type="image/jpeg">
+                        <img alt="Foto do Will Nunes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/WillNunes.jpg') }}" data-src="{{ url_for('static', filename='convidados/WillNunes.jpg') }}">
+                    </picture>
+                </div>
+                    <div class="descricao">
+                        <h2>WILL_NUNES</h2>
+                        <a href='https://www.instagram.com/willonunes/' target='_blank' rel='noopener noreferrer'><p class="rede-social">@willonunes</p></a>
+                        <p>Will Nunes é designer gráfico independente focado em criação de narrativas visuais através de marcas, embalagens, editoriais, ilustrações, e alguns outros formatos não tão comuns.</p>
+                    </div>
+                <div class="atracao">
+                    <h2>A influência e impacto da cultura afro-brasileira no Design</h2>
+                    <p>Neste encontro, os convidados para a mesa redonda irão abordar a experiência e perspectiva individuais de cada acerca de como a cultura afro-brasileira tem um peso em seus trabalhos, e como essa influência impacta o cenário brasileiro do design.</p>
+                </div>
+            </div>
+            <div class="offset-border mesaredonda-border"></div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block tail %}
+<script>
+    $('.lista-convidados a').click(function(){
+        var _self = this
+        $('.convidado-content').scrollTop(0)
+        $.scrollTo($('.convidados'), 500)
+        $('.active > .convidado-content').slideUp(function() {
+            $('.convidados > .active').removeClass('active')
+            $('.convidados > .'+_self.className.split(' ')[0]).addClass('active');
+            $('.convidados > .'+_self.className.split(' ')[0]+' > .convidado-content').slideDown()
+        })
+        $('.active-lista').attr("aria-expanded","false").attr("aria-disabled","false").removeClass('active-lista');
+        $('.lista-convidados .'+this.className).attr("aria-expanded","true").attr("aria-disabled","true").addClass('active-lista');
+    });
+    $('.activity > a').click(function(){
+        var _self = this
+        $('.convidado-content').scrollTop(0)
+        $('.active > .convidado-content').slideUp(function() {
+            $('.convidados > .active').removeClass('active')
+            $('.convidados > .'+$('#text-content > .'+_self.className.split(' ')[0]+' > .lista-convidados a:first').attr("class").split(' ')[0]).addClass('active');
+            $('.convidados > .'+$('#text-content > .'+_self.className.split(' ')[0]+' > .lista-convidados a:first').attr("class").split(' ')[0]).children('.convidado-content').slideDown()
+        })
+        $('.lista-convidados').removeClass('active');
+        $('.active-lista').attr("aria-expanded","false").attr("aria-disabled","false").removeClass('active-lista');
+        $('.activity > a').attr("aria-expanded","false").attr("aria-disabled","false")
+        $('#text-content > .'+this.className+' > .lista-convidados').addClass('active');
+        $('#text-content > .'+this.className+' > .lista-convidados a:first').attr("aria-expanded","true").attr("aria-disabled","true").addClass('active-lista');
+        $('#text-content > .'+this.className+' > a').attr("aria-expanded","true").attr("aria-disabled","true")
+    });
+
+    $('.lista-convidados a').keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            $('.convidado-content').scrollTop(0)
+            $.scrollTo($('.convidados'), 500)
+            $('.convidados > .active').removeClass('active');
+            $('.active-lista').attr("aria-expanded","false").attr("aria-disabled","false").removeClass('active-lista');
+            $('.convidados > .'+this.className).addClass('active');
+            $('.lista-convidados .'+this.className).attr("aria-expanded","true").attr("aria-disabled","true").addClass('active-lista');
+        }
+    })
+    $('.activity > a').keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            $('.convidado-content').scrollTop(0)
+            $('.convidados > .active').removeClass('active');
+            $('.lista-convidados').removeClass('active');
+            $('.active-lista').attr("aria-expanded","false").attr("aria-disabled","false").removeClass('active-lista');
+            $('.activity > a').attr("aria-expanded","false").attr("aria-disabled","false")
+            $('.convidados > .'+$('#text-content > .'+this.className+' > .lista-convidados a:first').attr("class")).addClass('active');
+            $('#text-content > .'+this.className+' > .lista-convidados').addClass('active');
+            $('#text-content > .'+this.className+' > .lista-convidados a:first').attr("aria-expanded","true").attr("aria-disabled","true").addClass('active-lista');
+            $('#text-content > .'+this.className+' > a').attr("aria-expanded","true").attr("aria-disabled","true")
+        }
+    })
+
+</script>
+{% endblock tail %}

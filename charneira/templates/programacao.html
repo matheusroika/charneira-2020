@@ -1,0 +1,2824 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/programacao.css') }}?v=4">
+{% endblock %}
+
+{% block body %}
+<div class='content'>
+    <h1>Programação</h1>
+        <div id='text-content'>
+            <div class="datas">
+                <div class="data Segunda active" role="button" tabindex="0">
+                    <p class="semana active">SEG</p>
+                    <p class="mes active">28</p>
+                </div>
+                <div class="data Terca" role="button" tabindex="0">
+                    <p class="semana">TER</p>
+                    <p class="mes">29</p>
+                </div>
+                <div class="data Quarta" role="button" tabindex="0">
+                    <p class="semana">QUA</p>
+                    <p class="mes">30</p>
+                </div>
+                <div class="data Quinta" role="button" tabindex="0">
+                    <p class="semana">QUI</p>
+                    <p class="mes">01</p>
+                </div>
+                <div class="data Sexta" role="button" tabindex="0">
+                    <p class="semana">SEX</p>
+                    <p class="mes">02</p>
+                </div>
+            </div>
+
+            <div class="legenda-dia-mobile">
+                <div class="legenda-workshop">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <div class="legenda-palestra">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <div class="legenda-mesaredonda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+            </div>
+
+        <div class="dias">
+            <div class="Segunda dia up" style="display: block;">
+                <div class="offset-border"></div>
+                <div class="legenda-dia">
+                    <div class="legenda-workshop">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legenda-palestra">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <p>Palestra</p>
+                    </div>
+                    <div class="legenda-mesaredonda">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <p>Mesa_Redonda</p>
+                    </div>
+                </div>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="dia-content">
+                    <div class="item-atividade EsculturaeModelagem3D" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>09h00</p>
+                                <p>-</p>
+                                <p>11h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>09h</p>
+                                <p>-</p>
+                                <p>11h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Escultura e Modelagem 3D</p>
+                            <p class="nome-convidado">Claudio Silva</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade ContraMare-DialogosSobreDesignIndependente" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>11h00</p>
+                                <p>-</p>
+                                <p>12h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>11h</p>
+                                <p>-</p>
+                                <p>12h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Contra Maré - Diálogos sobre Design Independente</p>
+                            <p class="nome-convidado">Lukthis Studio - Lucas Ribeiro</p>
+                        </div>
+                    </div>
+
+                    <div class="horario-border"></div>
+                    <div class="item-atividade EcodesignEmChamasDesignersDeTransicao" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>14h00</p>
+                                <p>-</p>
+                                <p>15h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>14h</p>
+                                <p>-</p>
+                                <p>15h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Ecodesign em chamas! Designers de transição</p>
+                            <p class="nome-convidado">Rafael Camargo</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade OficinaDeZineseNarrativasExperimentais" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>15h00</p>
+                                <p>-</p>
+                                <p>17h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>15h</p>
+                                <p>-</p>
+                                <p>17h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Oficina de Zines e Narrativas Experimentais</p>
+                            <p class="nome-convidado">Nicholas Steinmetz</p>
+                        </div>
+                    </div>
+                    
+                   <div class="item-atividade Colagem" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>17h00</p>
+                                <p>-</p>
+                                <p>18h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>17h</p>
+                                <p>-</p>
+                                <p>18h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">A dimensão histórica, técnica e processual da colagem</p>
+                            <p class="nome-convidado">Leandro Catapam</p>
+                        </div>
+                    </div>
+
+                    <div class="horario-border"></div>
+                    <div class="item-atividade EstrategiasParaOPresenteEFuturoDoDesign" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>19h00</p>
+                                <p>-</p>
+                                <p>22h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>19h</p>
+                                <p>-</p>
+                                <p>22h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Estratégias para o Presente e Futuro do Design</p>
+                            <p class="nome-convidado">Emilio Beltrami e Gisele Raulik</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Terca dia">
+                <div class="offset-border"></div>
+                <div class="legenda-dia">
+                    <div class="legenda-workshop">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legenda-palestra">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <p>Palestra</p>
+                    </div>
+                    <div class="legenda-mesaredonda">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <p>Mesa_Redonda</p>
+                    </div>
+                </div>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="dia-content">
+                    <div class="item-atividade ProducaoDeAnimacao1" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>09h00</p>
+                                <p>-</p>
+                                <p>11h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>09h</p>
+                                <p>-</p>
+                                <p>11h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Produção de Animação - Parte 1</p>
+                            <p class="nome-convidado">Guilherme Fonseca</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade Ecodesign" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>11h00</p>
+                                <p>-</p>
+                                <p>12h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>11h</p>
+                                <p>-</p>
+                                <p>12h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Ecodesign</p>
+                            <p class="nome-convidado">Sustentacto - Rosângela Araújo</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade DesignPorExperiencia" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>14h00</p>
+                                <p>-</p>
+                                <p>15h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>14h</p>
+                                <p>-</p>
+                                <p>15h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Design por experiência</p>
+                            <p class="nome-convidado">Dani Camargo</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade IntroducaoAoDesignDaInformacao" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>15h00</p>
+                                <p>-</p>
+                                <p>17h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>15h</p>
+                                <p>-</p>
+                                <p>17h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Introdução ao Design da Informação</p>
+                            <p class="nome-convidado">Bolívar Escobar</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade OProcessoDePesquisaNoCoolhunting" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>17h00</p>
+                                <p>-</p>
+                                <p>18h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>17h</p>
+                                <p>-</p>
+                                <p>18h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">O processo de pesquisa no coolhunting</p>
+                            <p class="nome-convidado">Marianne Rohrig</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade ConsultoriaDeImagem" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>19h00</p>
+                                <p>-</p>
+                                <p>20h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>19h</p>
+                                <p>-</p>
+                                <p>20h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Consultoria de imagem</p>
+                            <p class="nome-convidado">Tâmara Guzmán</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade PinturaDigital" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>20h00</p>
+                                <p>-</p>
+                                <p>22h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>20h</p>
+                                <p>-</p>
+                                <p>22h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Pintura Digital</p>
+                            <p class="nome-convidado">Escola Revolution - Victor Harmatiuk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Quarta dia">
+                <div class="offset-border"></div>
+                <div class="legenda-dia">
+                    <div class="legenda-workshop">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legenda-palestra">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <p>Palestra</p>
+                    </div>
+                    <div class="legenda-mesaredonda">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <p>Mesa_Redonda</p>
+                    </div>
+                </div>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="dia-content">
+                    <div class="item-atividade ProducaoDeAnimacao2" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>09h00</p>
+                                <p>-</p>
+                                <p>11h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>09h</p>
+                                <p>-</p>
+                                <p>11h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Produção de Animação - Parte 2</p>
+                            <p class="nome-convidado">Guilherme Fonseca</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade LegalDesign" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>11h00</p>
+                                <p>-</p>
+                                <p>12h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>11h</p>
+                                <p>-</p>
+                                <p>12h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Legal Design</p>
+                            <p class="nome-convidado">Ana Paula Holtz</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade DesignThinkingeInovação" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>14h00</p>
+                                <p>-</p>
+                                <p>15h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>14h</p>
+                                <p>-</p>
+                                <p>15h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Design Thinking e Inovação</p>
+                            <p class="nome-convidado">Marcelo Pimenta</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade BordadoEmPedraria" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>15h00</p>
+                                <p>-</p>
+                                <p>17h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>15h</p>
+                                <p>-</p>
+                                <p>17h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Bordado em Pedraria</p>
+                            <p class="nome-convidado">Fernanda Nadal</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade OFemininoNaHoraDeEmpreender" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>17h00</p>
+                                <p>-</p>
+                                <p>18h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>17h</p>
+                                <p>-</p>
+                                <p>18h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">O feminino na hora de empreender</p>
+                            <p class="nome-convidado">Karla Keiko (Oidē), Gabriela Almeida e Paula Mosca (Mosca Cerâmica)</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade ProcessosDeCriacaoDeUmaMarcaAutoral" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>19h00</p>
+                                <p>-</p>
+                                <p>20h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>19h</p>
+                                <p>-</p>
+                                <p>20h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Processos de criação de uma marca autoral</p>
+                            <p class="nome-convidado">MAPÔ Design - Marcela Pontes</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade OMercadoDaAnimacaoeTendenciasFuturasDeTracoeForma" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>20h00</p>
+                                <p>-</p>
+                                <p>21h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>20h</p>
+                                <p>-</p>
+                                <p>21h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">O mercado da animação e tendências futuras de traço e forma</p>
+                            <p class="nome-convidado">Dogzilla Studios - Walkir Fernandes e Spirit Animation - Fernando Macedo</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade DesenhoTipografico" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>21h00</p>
+                                <p>-</p>
+                                <p>22h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>21h</p>
+                                <p>-</p>
+                                <p>22h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Desenho Tipográfico</p>
+                            <p class="nome-convidado">Leonardo Buggy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Quinta dia">
+                <div class="offset-border"></div>
+                <div class="legenda-dia">
+                    <div class="legenda-workshop">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legenda-palestra">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <p>Palestra</p>
+                    </div>
+                    <div class="legenda-mesaredonda">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <p>Mesa_Redonda</p>
+                    </div>
+                </div>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="dia-content">
+                    <div class="item-atividade Upcycling" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>09h00</p>
+                                <p>-</p>
+                                <p>11h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>09h</p>
+                                <p>-</p>
+                                <p>11h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Upcycling</p>
+                            <p class="nome-convidado">Gal Design - Khetlin Gomes</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade CarreirasEmUX" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>11h00</p>
+                                <p>-</p>
+                                <p>12h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>11h</p>
+                                <p>-</p>
+                                <p>12h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Carreiras em UX</p>
+                            <p class="nome-convidado">Adriana Betiol, Ana Valéria, Camila Ribeiro, Carolina Andujar e Lary Tertuliano</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade DicasDeEscritaDoPensamentoaImpressão" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>14h00</p>
+                                <p>-</p>
+                                <p>15h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>14h</p>
+                                <p>-</p>
+                                <p>15h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Dicas de escrita: Do pensamento a Impressão</p>
+                            <p class="nome-convidado">Ana Valéria e Gustavo Teixeira</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade ProcessosCriativosNaFotografiaeEdicao" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>15h00</p>
+                                <p>-</p>
+                                <p>17h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>15h</p>
+                                <p>-</p>
+                                <p>17h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Processos criativos na fotografia e edição</p>
+                            <p class="nome-convidado">Caroline Lins</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade EmpreendedorismoeNegocios" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>17h00</p>
+                                <p>-</p>
+                                <p>18h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>17h</p>
+                                <p>-</p>
+                                <p>18h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Empreendedorismo e Negócios</p>
+                            <p class="nome-convidado">Agatha Moraes, Katsukazan (Priscila Sabino) e Porto Bureau (Rafael Zem)</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade OProcessoDeUXNaAdobe" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>19h00</p>
+                                <p>-</p>
+                                <p>20h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>19h</p>
+                                <p>-</p>
+                                <p>20h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">O processo de UX na Adobe</p>
+                            <p class="nome-convidado">Demian Borba</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade IlustracaoVetorial" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>20h00</p>
+                                <p>-</p>
+                                <p>22h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>20h</p>
+                                <p>-</p>
+                                <p>22h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Ilustração Vetorial</p>
+                            <p class="nome-convidado">Caroline Fraga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Sexta dia">
+                <div class="offset-border"></div>
+                <div class="legenda-dia">
+                    <div class="legenda-workshop">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <p>Workshop</p>
+                    </div>
+                    <div class="legenda-palestra">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <p>Palestra</p>
+                    </div>
+                    <div class="legenda-mesaredonda">
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <p>Mesa_Redonda</p>
+                    </div>
+                </div>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="dia-content">
+                    <div class="item-atividade MotionDesigneaInternet" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>09h00</p>
+                                <p>-</p>
+                                <p>11h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>09h</p>
+                                <p>-</p>
+                                <p>11h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Motion Design e a Internet</p>
+                            <p class="nome-convidado">Brainstorm Academy - Mateus Ferreira</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade VisaoSistemicaParaProjetosDeIdentidade" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>11h00</p>
+                                <p>-</p>
+                                <p>12h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>11h</p>
+                                <p>-</p>
+                                <p>12h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Visão Sistêmica para Projetos de Identidade</p>
+                            <p class="nome-convidado">Will Nunes</p>
+                        </div>
+                    </div>
+                    <div class="horario-border"></div>
+                    <div class="item-atividade AImportanciaDasSoftSkills" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>14h00</p>
+                                <p>-</p>
+                                <p>15h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>14h</p>
+                                <p>-</p>
+                                <p>15h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">A Importância das Soft Skills</p>
+                            <p class="nome-convidado">Slash Education - Ariane Cereda</p>
+                        </div>
+                    </div>
+                    <div class="item-atividade IlustraçaoParaEstamparia" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>15h00</p>
+                                <p>-</p>
+                                <p>17h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>15h</p>
+                                <p>-</p>
+                                <p>17h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Ilustração para Estamparia</p>
+                            <p class="nome-convidado">Oscar Teixeira</p>
+                        </div>
+                    </div>
+
+                    <div class="item-atividade AInfluenciaeImpactoDaCulturaAfro-BrasileiraNoDesign" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>17h00</p>
+                                <p>-</p>
+                                <p>18h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>17h</p>
+                                <p>-</p>
+                                <p>18h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">A influência e impacto da cultura afro-brasileira no design</p>
+                            <p class="nome-convidado">Giulia Fagundes, Will Nunes e Lukthis Studio (Lucas Ribeiro)</p>
+                        </div>
+                    </div>
+
+                    <div class="horario-border"></div>
+                    <div class="placeholder" role="button" tabindex="0">
+                        <div>
+                            <div class="horario">
+                                <p>19h00</p>
+                                <p>-</p>
+                                <p>22h00</p>
+                            </div>
+                            <div class="horario-mobile">
+                                <p>19h</p>
+                                <p>-</p>
+                                <p>22h</p>
+                            </div>
+                        </div>
+                        <div class='rectangle' aria-hidden="true" style="background-color: #ffffff;"></div>
+                        <div class="atividade-e-convidado">
+                            <p class="nome-atividade">Festa de Encerramento</p>
+                            <p class="nome-convidado">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="atividades" style="display: none;">
+            <div class="atividade EsculturaeModelagem3D">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>09h00</p>
+                    <p>-</p>
+                    <p>11h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Escultura e Modelagem 3D</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/ClaudioSilva.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/ClaudioSilva.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Claudio Silva" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/ClaudioSilva.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/ClaudioSilva.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>CLAUDIO_SILVA</h2>
+                            <a href='https://www.instagram.com/claudio.s_sculpture/' target='_blank'><p class="rede-social">@claudio.s_sculpture</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Escultura e Modelagem 3D</h2>
+                        <div class="horario">
+                            <p>09h00</p>
+                            <p>-</p>
+                            <p>11h00</p>
+                        </div>
+                        <p>Neste workshop serão apresentados alguns cases de convergência do tradicional com o digital no processo de produção de personagens, réplicas de monumentos e objetos em geral, da captura a impressão 3D das peças. Em seguida Claudio fará uma demonstração de modelagem digital no ZBrush, onde irá apresentar um pouco de sua forma de modelar e pensar o processo de produção que usa em seu dia a dia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade OficinaDeZineseNarrativasExperimentais">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>15h00</p>
+                    <p>-</p>
+                    <p>17h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Oficina de Zines e Narrativas Experimentais</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/NicholasSteinmetz.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/NicholasSteinmetz.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Nicholas Steinmetz" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/NicholasSteinmetz.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/NicholasSteinmetz.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>NICHOLAS_STEINMETZ</h2>
+                            <a href='https://www.instagram.com/d0rts/' target='_blank'><p class="rede-social">@d0rts</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Oficina de Zines e Narrativas Experimentais 3D</h2>
+                        <div class="horario">
+                            <p>15h00</p>
+                            <p>-</p>
+                            <p>17h00</p>
+                        </div>
+                        <p>Por meio de exercícios de escrita criativa e experimentação gráfica, os participantes poderão trabalhar em um pequeno zine físico ou digital em suas próprias casas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade ContraMare-DialogosSobreDesignIndependente">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>11h00</p>
+                    <p>-</p>
+                    <p>12h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Contra Maré - Diálogos sobre Design Independente</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselLukthis" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo do Lukthis Studio" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/LukthisStudio.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Lucas Ribeiro" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/LucasRibeiro.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselLukthis" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselLukthis" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>LUKTHIS_STUDIO<br>LUCAS_RIBEIRO</h2>
+                            <a href='https://www.instagram.com/lukthis.studio/' target='_blank'><p class="rede-social">@lukthis.studio</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Contra Maré - Diálogos sobre Design Independente</h2>
+                        <div class="horario">
+                            <p>11h00</p>
+                            <p>-</p>
+                            <p>12h00</p>
+                        </div>
+                        <p>Palestra em que Lucas fala sobre sua trajetória dentro do design. Como designer gráfico, seus trabalhos de desenvolvimento de marca, direção de arte e identidade visual.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade EcodesignEmChamasDesignersDeTransicao">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>14h00</p>
+                    <p>-</p>
+                    <p>15h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Ecodesign em chamas! Designers de transição</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/RafaelCamargo.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/RafaelCamargo.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Rafael Camargo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/RafaelCamargo.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/RafaelCamargo.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>RAFAEL_CAMARGO</h2>
+                            <a href='https://www.instagram.com/rafa.camargo3110/' target='_blank'><p class="rede-social">@rafa.camargo3110</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Ecodesign em chamas! Designers de transição</h2>
+                        <div class="horario">
+                            <p>14h00</p>
+                            <p>-</p>
+                            <p>15h00</p>
+                        </div>
+                        <p>Ecodesign é uma ferramenta utilizada nas áreas de arquitetura, engenharia e design, atendendo novos modelos de produção e consumo, contribuindo para o desenvolvimento sustentável através da substituição de produtos e processos por outros menos nocivos ao meio ambiente. Rafa nos mostra os desafios e métodos de vivermos em um mundo melhor através do design com o questionamento: Como cuidar do ecossistema sendo um designer?</p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="atividade Colagem">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>17h00</p>
+                    <p>-</p>
+                    <p>18h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">A dimensão histórica, técnica e processual da colagem em suas diversas expressões</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LeandroCatapam.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LeandroCatapam.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Leandro Catapam" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/LeandroCatapam.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LeandroCatapam.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>LEANDRO_CATAPAM</h2>
+                            <a href='https://www.instagram.com/lespacedisco/' target='_blank'><p class="rede-social">@lespacedisco</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>A dimensão histórica, técnica e processual da colagem em suas diversas expressões</h2>
+                        <div class="horario">
+                            <p>17h00</p>
+                            <p>-</p>
+                            <p>18h00</p>
+                        </div>
+                        <p>A palestra aborda o tema Colagem a partir de sua origem histórica, características técnicas e de pesquisa, agregando as abordagens analógicas e digitais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade EstrategiasParaOPresenteEFuturoDoDesign">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>28/09</h2>
+                    <h3>SEGUNDA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>19h00</p>
+                    <p>-</p>
+                    <p>22h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Estratégias para o Presente e Futuro do Design</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselEstrategiasParaOPresenteEFuturoDoDesign" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GiseleRaulik.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GiseleRaulik.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Gisele Raulik" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/GiseleRaulik.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GiseleRaulik.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/EmilioBeltrami.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/EmilioBeltrami.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Emilio Beltrami" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/EmilioBeltrami.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/EmilioBeltrami.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselEstrategiasParaOPresenteEFuturoDoDesign" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselEstrategiasParaOPresenteEFuturoDoDesign" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">GISELE_RAULIK</h2>
+                            <h2 class="none">EMILIO_BELTRAMI</h2>
+                            <p class="rede-social none active"><a href='https://www.instagram.com/gisele_raulik/' target='_blank'>@gisele_raulik</a></p>
+                            <p class="rede-social none"><a></a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Estratégias para o Presente e Futuro do Design</h2>
+                        <div class="horario">
+                            <p>19h00</p>
+                            <p>-</p>
+                            <p>22h00</p>
+                        </div>
+                        <p>DO que mudou no âmbito do Design nas últimas décadas? Quais fatores causaram essas mudanças? O que ainda deve mudar? O que vai causar mais mudança? Como designers, qual é o papel que assumimos? Você está protagonizando essas mudanças ou criando divergências?<br>
+                            Nossos convidados dialogam sobre o presente e do futuro do design, levantando perspectivas baseadas na metodologia de previsão de cenários, identificando os elementos tecnológicos das cadeias de valor relacionadas a valorização do design, necessárias para aumentar a competitividade das empresas e propondo como essas perspectivas podem se conectar com os ciclos humanos do presente, sempre em constante modificação.</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="atividade ProducaoDeAnimacao1">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>09h00</p>
+                    <p>-</p>
+                    <p>11h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Produção de Animação - Parte 1</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Guilherme Fonseca" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GuilhermeFonseca.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>GUILHERME_FONSECA</h2>
+                            <a><p class="rede-social"></p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Produção de Animação - Parte 1</h2>
+                        <div class="horario">
+                            <p>09h00</p>
+                            <p>-</p>
+                            <p>11h00</p>
+                        </div>
+                        <p>Neste workshop Gui Fonseca irá apresentar os processos que envolvem o desenvolvimento de animações para TV, games e cinema. Nesta oficina serão abordados os diversos aspectos que envolvem a criação e planejamento de animações, sejam elas para o mercado publicitário ou de entretenimento, apresentando também aspectos de custo e mercado e cases de sucesso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade Ecodesign">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>11h00</p>
+                    <p>-</p>
+                    <p>12h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Ecodesign</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/RosangelaAraujo.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/RosangelaAraujo.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Rosângela Araújo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/RosangelaAraujo.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/RosangelaAraujo.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>ROSÂNGELA_ARAÚJO</h2>
+                            <a href='https://www.instagram.com/sustentacto/' target='_blank'><p class="rede-social">@sustentacto</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Ecodesign</h2>
+                        <div class="horario">
+                            <p>11h00</p>
+                            <p>-</p>
+                            <p>12h00</p>
+                        </div>
+                        <p>Pra quem busca soluções sustentáveis para o design de serviços, produtos e experiências.<br>
+                            → Partilha de dados e informações recentes do Brasil e do Mundo.<br>
+                            → Ferramentas de design thinking.<br>
+                            → Combinação de pensamentos criativos e analíticos.<br>
+                            → Aprimore a experiência e qualidade de serviços e produtos para seu consumidor e o mundo.<br>
+                            → Insights da última visita à Saint Etienne com a focal point mais importante do mundo em design dentro da rede de cidades criativas da Unesco.<br>
+                            → Conheça e aplique ferramentas de design thinking para o desenvolvimento de experiências sustentáveis.<br>
+                            → Conheça um olhar feminino para o papel do design para a sociedade, serviços, produtos, eventos e vivências.<br>
+                            → Instigue pensamento crítico.<br>
+                            → Conheça ferramentas que auxiliam o processo criativo.<br>
+                            → Trabalhe potencial analítico aliado à energia criativa.<br>
+                            → Experiência de troca e expansão de conhecimento e referências.<br>
+                            → Diálogos + Conteúdo Expositivo.<br>
+                            Entenda como criar e implementar soluções sustentáveis para produtos, serviços, experiências e tecnologias.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade DesignPorExperiencia">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>14h00</p>
+                    <p>-</p>
+                    <p>15h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Design por experiência</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/DaniCamargo.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/DaniCamargo.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Dani Camargo" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/DaniCamargo.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/DaniCamargo.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>DANI_CAMARGO</h2>
+                            <a href='https://www.instagram.com/camarkkk/' target='_blank'><p class="rede-social">@camarkkk</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Design por experiência</h2>
+                        <div class="horario">
+                            <p>14h00</p>
+                            <p>-</p>
+                            <p>15h00</p>
+                        </div>
+                        <p>500 camisetas. 01 portifólio. 70 euros. Design por experiência é uma palestra na qual Dani aproveita uma história real de três meses na Europa com sua marca de camisetas, para mostrar alguns erros que podem ser cometidos por um designer recém-formado.</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="atividade IntroducaoAoDesignDaInformacao">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>15h00</p>
+                    <p>-</p>
+                    <p>17h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Introdução ao Design da Informação</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/BolivarEscobar.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/BolivarEscobar.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Bolívar Escobar" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/BolivarEscobar.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/BolivarEscobar.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>BOLÍVAR_ESCOBAR</h2>
+                            <a href='https://www.instagram.com/bolivar_escobar/' target='_blank'><p class="rede-social">@bolivar_escobar</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Introdução ao Design da Informação</h2>
+                        <div class="horario">
+                            <p>15h00</p>
+                            <p>-</p>
+                            <p>17h00</p>
+                        </div>
+                        <p>Mestre em Design de Sistemas de Informação pela UFPR, Bolivar trabalha com Design gráfico e digital desde 2010, desenvolvendo projetos de pesquisa sobre infográficos, desenvolvimento de serviços, game design e design da informação. Além disso ele também faz stand-up, acredita?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade OProcessoDePesquisaNoCoolhunting">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>17h00</p>
+                    <p>-</p>
+                    <p>18h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">O processo de pesquisa no coolhunting</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/MarianneRohrig.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/MarianneRohrig.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Marianne Rohrig" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MarianneRohrig.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/MarianneRohrig.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>MARIANNE_ROHRIG</h2>
+                            <a href='https://www.instagram.com/mariannerohrig/' target='_blank'><p class="rede-social">@mariannerohrig</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>O processo de pesquisa no coolhunting</h2>
+                        <div class="horario">
+                            <p>17h00</p>
+                            <p>-</p>
+                            <p>18h00</p>
+                        </div>
+                        <p>O que são a pesquisa de tendências e o coolhunting.
+                            Como utilizá-los para entender a sociedade, o mercado e para desenvolver novos produtos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade ConsultoriaDeImagem">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>19h00</p>
+                    <p>-</p>
+                    <p>20h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Consultoria de imagem</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/TamaraGuzman.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/TamaraGuzman.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Tâmara Guzmán" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/TamaraGuzman.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/TamaraGuzman.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>TÂMARA_GUZMÁN</h2>
+                            <a href='https://www.instagram.com/tamaraguzman/' target='_blank'><p class="rede-social">@tamaraguzman</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Consultoria de imagem</h2>
+                        <div class="horario">
+                            <p>19h00</p>
+                            <p>-</p>
+                            <p>20h00</p>
+                        </div>
+                        <p>Tâmara irá abordar a moda generosa e empática, comentará os 7 estilos universais, e também a apresentará o 8° estilo universal, que é um dos seus focos. Comentará sobre seu trabalho de styling com celebridades, humanizando-as.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade PinturaDigital">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>29/09</h2>
+                    <h3>TERÇA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>20h00</p>
+                    <p>-</p>
+                    <p>22h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Pintura Digital</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselRevolution" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/VictorHarmatiuk.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/VictorHarmatiuk.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Victor Harmatiuk" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/VictorHarmatiuk.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/VictorHarmatiuk.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/EscolaRevolution.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/EscolaRevolution.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Escola Revolution" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/EscolaRevolution.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/EscolaRevolution.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselRevolution" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselRevolution" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>ESCOLA_REVOLUTION<br>VICTOR_HARMATIUK</h2>
+                            <p class="rede-social">
+                                <a href='https://www.instagram.com/escolarevolution/' target='_blank'><span>@escolarevolution</span></a>
+                                <a href='https://www.instagram.com/victorhharmatiuk/' target='_blank'><span>@victorhharmatiuk</span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Pintura Digital</h2>
+                        <div class="horario">
+                            <p>20h00</p>
+                            <p>-</p>
+                            <p>22h00</p>
+                        </div>
+                        <p>Introdução a técnicas da ilustração digital para a criação de cenários utilizados em concept art de jogos 2D e 3D. Os participantes vão conhecer as ferramentas utilizadas no mercado de entretenimento e algumas das técnicas mais utilizadas para a criação de pinturas digitais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade ProducaoDeAnimacao2">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>09h00</p>
+                    <p>-</p>
+                    <p>11h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Produção de Animação - Parte 2</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Guilherme Fonseca" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GuilhermeFonseca.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GuilhermeFonseca.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>GUILHERME_FONSECA</h2>
+                            <a><p class="rede-social"></p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Produção de Animação - Parte 2</h2>
+                        <div class="horario">
+                            <p>09h00</p>
+                            <p>-</p>
+                            <p>11h00</p>
+                        </div>
+                        <p>Neste workshop Gui Fonseca irá apresentar os processos que envolvem o desenvolvimento de animações para TV, games e cinema. Nesta oficina serão abordados os diversos aspectos que envolvem a criação e planejamento de animações, sejam elas para o mercado publicitário ou de entretenimento, apresentando também aspectos de custo e mercado e cases de sucesso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade LegalDesign">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>11h00</p>
+                    <p>-</p>
+                    <p>12h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Legal Design</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/AnaPaulaHoltz.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/AnaPaulaHoltz.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Ana Paula Holtz" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/AnaPaulaHoltz.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/AnaPaulaHoltz.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>ANA_PAULA_HOLTZ</h2>
+                            <a href='https://www.instagram.com/ulaholtz/' target='_blank'><p class="rede-social">@ulaholtz</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Legal Design</h2>
+                        <div class="horario">
+                            <p>11h00</p>
+                            <p>-</p>
+                            <p>12h00</p>
+                        </div>
+                        <p>Já ouviu falar em Legal Design? Parece sofisticado mas é simples e intuitivo.  É uma forma de entregar serviços jurídicos do jeito que as pessoas entendem e precisam. É aplicar conceitos de Design para melhorar a experiência das pessoas com "as coisas do direito". Não é tecnologia, vai além. Não é marketing, mas pode ajudar a vender. Sua missão é descomplicar o direito.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade DesignThinkingeInovação">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>14h00</p>
+                    <p>-</p>
+                    <p>15h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Design Thinking e Inovação</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/MarceloPimenta.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/MarceloPimenta.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Marcelo Pimenta" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MarceloPimenta.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/MarceloPimenta.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>MARCELO_PIMENTA</h2>
+                            <a href='https://www.instagram.com/marceloapimenta/' target='_blank'><p class="rede-social">@marceloapimenta</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Design Thinking e Inovação</h2>
+                        <div class="horario">
+                            <p>14h00</p>
+                            <p>-</p>
+                            <p>15h00</p>
+                        </div>
+                        <p>Atualmente, criar um novo produto ou melhorar um serviço já existente se faz de um jeito diferente do que se fazia antigamente. Hoje é preciso se conectar com os clientes, criando vínculos que tragam valor percebido e fidelidade. WhatsApp, NetFlix, Spotify, DropBox são exemplos de empresas que mudaram os hábitos em seus segmentos. O jeito de pensar do design, ou design thinking, é uma abordagem que reúne cultura mais ferramentas que, baseadas em pilares como a empatia, a colaboração e a experimentação, possam gerar produtos e serviços que sejam desejados pelos clientes, tecnicamente possíveis e financeiramente lucrativos para os empresários e acessíveis pelos cliente.</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="atividade BordadoEmPedraria">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>15h00</p>
+                    <p>-</p>
+                    <p>17h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Bordado em Pedraria</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/FernandaNadal.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/FernandaNadal.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Fernanda Nadal" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/FernandaNadal.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/FernandaNadal.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>FERNANDA_NADAL</h2>
+                            <a href='https://www.instagram.com/fernadal/' target='_blank'><p class="rede-social">@fernadal</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Bordado em Pedraria</h2>
+                        <div class="horario">
+                            <p>15h00</p>
+                            <p>-</p>
+                            <p>17h00</p>
+                        </div>
+                        <p>Neste workshop estaremos vendo um pouco sobre história do bordado e como ele pode agregar na sua marca, as possibilidades que ele trás e seu mercado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade OFemininoNaHoraDeEmpreender">
+                <div class="offset-border mesaredonda-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>17h00</p>
+                    <p>-</p>
+                    <p>18h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">O feminino na hora de empreender</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselOFemininoNaHoraDeEmpreender" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/KarlaKeiko.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/KarlaKeiko.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Karla Keiko" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/KarlaKeiko.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/KarlaKeiko.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GabrielaAlmeida.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GabrielaAlmeida.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Gabriela Almeida" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/GabrielaAlmeida.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GabrielaAlmeida.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/MoscaCeramica.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/MoscaCeramica.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Mosca Cerâmica" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/MoscaCeramica.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/MoscaCeramica.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PaulaMosca.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PaulaMosca.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Paula Mosca" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/PaulaMosca.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/PaulaMosca.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselOFemininoNaHoraDeEmpreender" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselOFemininoNaHoraDeEmpreender" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">KARLA_KEIKO<br>OIDE</h2>
+                            <h2 class="none">GABRIELA_ALMEIDA<br>&nbsp;</h2>
+                            <h2 class="none">PAULA_MOSCA<br>MOSCA_CERÂMICA</h2>
+                            <h2 class="none">PAULA_MOSCA<br>MOSCA_CERÂMICA</h2>
+                            <p class="rede-social none active"><a href='https://www.instagram.com/o.i.d.e/' target='_blank'>@o.i.d.e</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/gabialmeida.co/' target='_blank'>@gabialmeida.co</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/moscaceramica/' target='_blank'>@moscaceramica</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/moscaceramica/' target='_blank'>@moscaceramica</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>O feminino na hora de empreender</h2>
+                        <div class="horario">
+                            <p>17h00</p>
+                            <p>-</p>
+                            <p>18h00</p>
+                        </div>
+                        <p>Neste encontro, as convidadas irão abordar o lado feminino na hora de empreender. Elas sentiram alguma dificuldade por ser mulher? Acham que os homens têm certa vantagem na hora de começar seu próprio negócio ou há igualdade nesse ramo?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade ProcessosDeCriacaoDeUmaMarcaAutoral">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>19h00</p>
+                    <p>-</p>
+                    <p>20h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Processos de criação de uma marca autoral</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/MAPO.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/MAPO.jpg') }}" type="image/jpeg">
+                                <img alt="Logotipo da Mapô Design" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/MAPO.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/MAPO.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>MAPÔ_DESIGN</h2>
+                            <a href='https://www.instagram.com/use_mapo/' target='_blank'><p class="rede-social">@use_mapo</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Processos de criação de uma marca autoral</h2>
+                        <div class="horario">
+                            <p>19h00</p>
+                            <p>-</p>
+                            <p>20h00</p>
+                        </div>
+                        <p>Altos e baixos de uma marca em construção. Nessa palestra a proposta é contar um pouco do universo de criação de uma marca autoral partindo da experiência de uma pequena marca solta no mundo conhecida como MAPÔ. Nesse espaço abordaremos quais foram os principais aprendizados e dificuldades até então encontrados. Como encontramos nosso próprio processo de criação que mais nos permite fluir. Como buscamos nos conectar com quem acredita em jovens empreendedoras. Sinta-se a vontade para fazer parte dessa troca e quem sabe sair com algumas ideias para enfim começar sua própria marca!</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="atividade OMercadoDaAnimacaoeTendenciasFuturasDeTracoeForma">
+                <div class="offset-border mesaredonda-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>20h00</p>
+                    <p>-</p>
+                    <p>21h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">O mercado da animação e tendências futuras de traço e forma</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselOMercadoDaAnimacaoeTendenciasFuturasDeTracoeForma" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/DogzillaStudio.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/DogzillaStudio.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Dogzilla Studio" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/DogzillaStudio.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/DogzillaStudio.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/WalkirFernandes.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/WalkirFernandes.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Walkir Fernandes" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/WalkirFernandes.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/WalkirFernandes.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-imag img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/SpiritAnimation.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/SpiritAnimation.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Spirit Animation" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/SpiritAnimation.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/SpiritAnimation.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/FernandoMacedo.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/FernandoMacedo.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Fernando Macedo" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/FernandoMacedo.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/FernandoMacedo.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselOMercadoDaAnimacaoeTendenciasFuturasDeTracoeForma" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselOMercadoDaAnimacaoeTendenciasFuturasDeTracoeForma" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">DOGZILLA_STUDIOS<br>WALKIR_FERNANDES</h2>
+                            <h2 class="none">DOGZILLA_STUDIOS<br>WALKIR_FERNANDES</h2>
+                            <h2 class="none">SPIRIT_ANIMATION<br>FERNANDO_MACEDO</h2>
+                            <h2 class="none">SPIRIT_ANIMATION<br>FERNANDO_MACEDO</h2>
+                            <p class="rede-social none active">
+                                <a href='https://www.instagram.com/dogzillastudio/' target='_blank'><span>@dogzillastudio</span></a>
+                                <a href='https://www.instagram.com/walkirfernandes/' target='_blank'><span>@walkirfernandes</span></a>
+                            </p>
+                            <p class="rede-social none">
+                                <a href='https://www.instagram.com/dogzillastudio/' target='_blank'><span>@dogzillastudio</span></a>
+                                <a href='https://www.instagram.com/walkirfernandes/' target='_blank'><span>@walkirfernandes</span></a>
+                            </p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/spirit_animation/' target='_blank'>@spirit_animation<br>&nbsp;</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/spirit_animation/' target='_blank'>@spirit_animation<br>&nbsp;</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>O mercado da animação e tendências futuras de traço e forma</h2>
+                        <div class="horario">
+                            <p>20h00</p>
+                            <p>-</p>
+                            <p>21h00</p>
+                        </div>
+                        <p>Dogzilla Studio e Spirit Animation conversam nessa mesa redonda sobre o mercado da animação. Nele, os convidados colocarão suas opiniões próprias sobre o mercado em que atuam. O que eles acham que são tendências futuras de traço e forma e por que?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade DesenhoTipografico">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>30/09</h2>
+                    <h3>QUARTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>21h00</p>
+                    <p>-</p>
+                    <p>22h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Desenho Tipográfico</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/LeonardoBuggy.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/LeonardoBuggy.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Leonardo Buggy" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/LeonardoBuggy.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LeonardoBuggy.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>LEONARDO_BUGGY</h2>
+                            <a href='https://www.instagram.com/buggy_tiposdoacaso/' target='_blank'><p class="rede-social">@buggy_tiposdoacaso</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Desenho Tipográfico</h2>
+                        <div class="horario">
+                            <p>21h00</p>
+                            <p>-</p>
+                            <p>22h00</p>
+                        </div>
+                        <p>Durante a palestra Buggy irá comentar sobre seu livro "O MECOtipo", abordando também com é atuar profissionalmente com tipografia.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="atividade Upcycling">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>09h00</p>
+                    <p>-</p>
+                    <p>11h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Upcycling</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/GalDesign.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/GalDesign.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Khetlin Gomes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/GalDesign.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GalDesign.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>GAL_DESIGN<br>KHETLIN_GOMES</h2>
+                            <a href='https://www.instagram.com/gal_design/' target='_blank'><p class="rede-social">@gal_design</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Upcycling</h2>
+                        <div class="horario">
+                            <p>09h00</p>
+                            <p>-</p>
+                            <p>11h00</p>
+                        </div>
+                        <p>O workshop irá abordar conceitos básicos de upcycling (definições, exemplos, formas de criação), passando por técnicas de upcycling e metodologias que auxiliam na criação afim de obter o máximo de aproveitamento dos insumos. Após a parte teórica, vamos criar um acessório único utilizando tecidos de retalhos e técnica de transformação textil, demonstrando na prática as formas de ressignificar e dar um novo ciclo ao que havia chego no fim de sua vida útil.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade CarreirasEmUX">
+                <div class="offset-borde mesaredonda-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>11h00</p>
+                    <p>-</p>
+                    <p>12h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Carreiras em UX</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselCarreirasEmUX" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AdrianaBetiol.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AdrianaBetiol.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Adriana Betiol" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/AdrianaBetiol.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/AdrianaBetiol.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Ana Valéria" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/AnaValeria.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/CamilaRibeiro.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/CamilaRibeiro.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Camila Ribeiro" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/CamilaRibeiro.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/CamilaRibeiro.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/CarolinaAndujar.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/CarolinaAndujar.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Carolina Andujar" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/CarolinaAndujar.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/CarolinaAndujar.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LaryTertuliano.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/LaryTertuliano.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Lary Tertuliano" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/LaryTertuliano.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LaryTertuliano.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselCarreirasEmUX" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselCarreirasEmUX" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">ADRIANA_BETIOL</h2>
+                            <h2 class="none">ANA_VALÉRIA</h2>
+                            <h2 class="none">CAMILA_RIBEIRO</h2>
+                            <h2 class="none">CAROLINA_ANDUJAR</h2>
+                            <h2 class="none">LARY_TERTULIANO</h2>
+                            <p class="rede-social none active"><a>&nbsp;</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/anavalerialvarez/' target='_blank'>@anavalerialvarez</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/meelaribeiro/' target='_blank'>@meelaribeiro</a></p>
+                            <p class="rede-social none">&nbsp;</p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/dsgnetudo/' target='_blank'>@dsgnetudo</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Carreiras em UX</h2>
+                        <div class="horario">
+                            <p>11h00</p>
+                            <p>-</p>
+                            <p>12h00</p>
+                        </div>
+                        <p>User Experience (UX) é um ramo muito comentado no mercado atualmente, principalmente com o aumento do uso das mídias digitais. Nessa mesa redonda, reunimos designers e pesquisadores do tema para debater sobre as diversas carreiras que existem e trabalham com UX.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade DicasDeEscritaDoPensamentoaImpressão">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>14h00</p>
+                    <p>-</p>
+                    <p>15h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Dicas de escrita: Do pensamento a Impressão</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselDicasDeEscritaDoPensamentoaImpressão" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Ana Valéria" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/AnaValeria.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/AnaValeria.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="palestra-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GustavoTeixeira.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/GustavoTeixeira.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Gustavo Teixeira" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/GustavoTeixeira.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GustavoTeixeira.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselDicasDeEscritaDoPensamentoaImpressão" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselDicasDeEscritaDoPensamentoaImpressão" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">ANA_VALÉRIA</h2>
+                            <h2 class="none">GUSTAVO_TEIXEIRA</h2>
+                            <p class="rede-social none active"><a href='https://www.instagram.com/anavalerialvarez/' target='_blank'>@anavalerialvarez</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/gustavisse/' target='_blank'>@gustavisse</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Dicas de escrita: Do pensamento a Impressão</h2>
+                        <div class="horario">
+                            <p>14h00</p>
+                            <p>-</p>
+                            <p>15h00</p>
+                        </div>
+                        <p>Dificuldades para escrever o TCC? Esta palestra irá te ajudar a esclarecer suas ideias, com técnicas para escrita de trabalhos científicos. Venha com a gente conhecer essas dicas e técnicas para encontrar o seu estilo de escrita!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade ProcessosCriativosNaFotografiaeEdicao">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>15h00</p>
+                    <p>-</p>
+                    <p>17h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Processos criativos na fotografia e edição</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/CarolineLins.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/CarolineLins.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Caroline Lins" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CarolineLins.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/CarolineLins.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>CAROLINE_LINS</h2>
+                            <a href='https://www.instagram.com/carolinelinsph/' target='_blank'><p class="rede-social">@carolinelinsph</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Processos criativos na fotografia e edição</h2>
+                        <div class="horario">
+                            <p>15h00</p>
+                            <p>-</p>
+                            <p>17h00</p>
+                        </div>
+                        <p>O workshop abrange a relação da fotografia com as novas mídias e plataformas de compartilhamento de imagens, um guia para concepção de conceitos e desenvolvimento de uma fotografia única utilizando artifícios comuns, uma análise da luz e da mensagem passada pela fotografia a partir dela, além de dicas importantes de edição em programas como Photoshop e Lightroom, visando unir fotografia e edição para que ambas se complementem em um mesmo conceito na imagem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade EmpreendedorismoeNegocios">
+                <div class="offset-border mesaredonda-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>17h00</p>
+                    <p>-</p>
+                    <p>18h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Empreendedorismo e Negócios</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselEmpreendedorismoeNegocios" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AgathaMoraes.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/AgathaMoraes.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Agatha Moraes" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/AgathaMoraes.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/AgathaMoraes.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/Katsukazan.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/Katsukazan.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Katsukazan" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/Katsukazan.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/Katsukazan.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PriscilaSabino.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PriscilaSabino.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto da Priscila Sabino" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/PriscilaSabino.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/PriscilaSabino.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PortoBureau.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/PortoBureau.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Porto Bureau" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/PortoBureau.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/PortoBureau.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="mesaredonda-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/RafaelZem.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/RafaelZem.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Rafael Zem" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/RafaelZem.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/RafaelZem.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselEmpreendedorismoeNegocios" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselEmpreendedorismoeNegocios" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">AGATHA_MORAES<br>&nbsp;</h2>
+                            <h2 class="none">PRISCILA_SABINO<br>KATSUKAZAN</h2>
+                            <h2 class="none">PRISCILA_SABINO<br>KATSUKAZAN</h2>
+                            <h2 class="none">RAFAEL_ZEM<br>PORTO_BUREAU</h2>
+                            <h2 class="none">RAFAEL_ZEM<br>PORTO_BUREAU</h2>
+                            <p class="rede-social none active"><a href='https://www.instagram.com/agathamoraesoficial/' target='_blank'>@agathamoraesoficial</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/katsukazan/' target='_blank'>@katsukazan</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/katsukazan/' target='_blank'>@katsukazan</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/portobureau/' target='_blank'>@portobureau</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/portobureau/' target='_blank'>@portobureau</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Empreendedorismo e Negócios</h2>
+                        <div class="horario">
+                            <p>17h00</p>
+                            <p>-</p>
+                            <p>18h00</p>
+                        </div>
+                        <p>A mesa redonda sobre empreendedorismo e negócios no design traz três profissionais que usaram o design como ferramenta para empreender. Nessa mesa redonda os convidados irão bater um papo sobre empreendedorismo na área de design, contando suas experiências e estudos sobre o tema. O que aprenderam e como aprenderam sobre o tema.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade OProcessoDeUXNaAdobe">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>19h00</p>
+                    <p>-</p>
+                    <p>20h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">O processo de UX na Adobe</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/DemianBorba.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/DemianBorba.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Demian Borba" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/DemianBorba.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/DemianBorba.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>DEMIAN_BORBA</h2>
+                            <a href='https://www.instagram.com/demianborba/' target='_blank'><p class="rede-social">@demianborba</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>O processo de UX na Adobe</h2>
+                        <div class="horario">
+                            <p>19h00</p>
+                            <p>-</p>
+                            <p>20h00</p>
+                        </div>
+                        <p>Demian irá compartilhar sua experiência como gerenciador de produtos na Adobe USA e sobre o processo de UX Design (experiência do usuário) nos produtos da empresa, hoje consolidada como uma referência no âmbito do design em termos de softwares de criação.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade IlustracaoVetorial">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>01/10</h2>
+                    <h3>QUINTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>20h00</p>
+                    <p>-</p>
+                    <p>22h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Ilustração Vetorial</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="workshop-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/CarolineFraga.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/CarolineFraga.jpg') }}" type="image/jpeg">
+                                <img alt="Foto da Caroline Fraga" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/CarolineFraga.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/CarolineFraga.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>CAROLINE_FRAGA</h2>
+                            <a href='https://www.instagram.com/caarolmare/' target='_blank'><p class="rede-social">@caarolmare</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Ilustração Vetorial</h2>
+                        <div class="horario">
+                            <p>20h00</p>
+                            <p>-</p>
+                            <p>22h00</p>
+                        </div>
+                        <p>Neste workshop os alunos irão aprender técnicas de ilustração vetorial e colorização no Adobe Illustrator.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade AInfluenciaeImpactoDaCulturaAfro-BrasileiraNoDesign">
+                <div class="offset-border mesaredonda-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #2ac5dd;"></div>
+                    <p>Mesa_Redonda</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>17h00</p>
+                    <p>-</p>
+                    <p>18h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">A influência e impacto da cultura afro-brasileira no design</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselAInfluenciaeImpactoDaCulturaAfro-BrasileiraNoDesign" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="mesaredonda-image img-container">
+                                        <picture>
+                                            <source data-srcset="{{ url_for('static', filename='convidados/GiuliaFagundes.webp') }}" type="image/webp">
+                                            <source data-srcset="{{ url_for('static', filename='convidados/GiuliaFagundes.jpg') }}" type="image/jpeg">
+                                            <img alt="Foto da Giulia Fagundes" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/GiuliaFagundes.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/GiuliaFagundes.jpg') }}">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mesaredonda-image img-container">
+                                        <picture>
+                                            <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.webp') }}" type="image/webp">
+                                            <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}" type="image/jpeg">
+                                            <img alt="Foto do Will Nunes" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/WillNunes.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mesaredonda-image img-container">
+                                        <picture>
+                                            <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.webp') }}" type="image/webp">
+                                            <source data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}" type="image/jpeg">
+                                            <img alt="Logotipo da Lukthis Studio" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/LukthisStudio.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LukthisStudio.jpg') }}">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="mesaredonda-image img-container">
+                                        <picture>
+                                            <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.webp') }}" type="image/webp">
+                                            <source data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}" type="image/jpeg">
+                                            <img alt="Foto do Lucas Ribeiro" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/LucasRibeiro.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/LucasRibeiro.jpg') }}">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselAInfluenciaeImpactoDaCulturaAfro-BrasileiraNoDesign" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselAInfluenciaeImpactoDaCulturaAfro-BrasileiraNoDesign" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2 class="none active">GIULIA_FAGUNDES<br>&nbsp;</h2>
+                            <h2 class="none">WILL_NUNES<br>&nbsp;</h2>
+                            <h2 class="none">LUKTHIS_STUDIO<br>LUCAS_RIBEIRO</h2>
+                            <h2 class="none">LUKTHIS_STUDIO<br>LUCAS_RIBEIRO</h2>
+                            <p class="rede-social none active"><a href='https://www.instagram.com/giuliafagundes______/' target='_blank'>@giuliafagundes______</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/willonunes/' target='_blank'>@willonunes</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/lukthis.studio/' target='_blank'>@lukthis.studio</a></p>
+                            <p class="rede-social none"><a href='https://www.instagram.com/lukthis.studio/' target='_blank'>@lukthis.studio</a></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>A influência e impacto da cultura afro-brasileira no design</h2>
+                        <div class="horario">
+                            <p>17h00</p>
+                            <p>-</p>
+                            <p>18h00</p>
+                        </div>
+                        <p>Neste encontro, os convidados para a mesa redonda irão abordar a experiência e perspectiva individuais de cada acerca de como a cultura afro-brasileira tem um peso em seus trabalhos, e como essa influência impacta o cenário brasileiro do design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade MotionDesigneaInternet">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>09h00</p>
+                    <p>-</p>
+                    <p>11h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Motion Design e a Internet</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselBrainstorm" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/BrainstormAcademy.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/BrainstormAcademy.jpg') }}" type="image/jpeg">
+                                        <img alt="Logotipo da Brainstorm Academy" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/BrainstormAcademy.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/BrainstormAcademy.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/MateusFerreira.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/MateusFerreira.jpg') }}" type="image/jpeg">
+                                        <img alt="Foto do Mateus Ferreira" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/MateusFerreira.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/MateusFerreira.jpg') }}">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselBrainstorm" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselBrainstorm" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>BRAINSTORM_ACADEMY<br>MATEUS_FERREIRA</h2>
+                            <p class="rede-social">
+                                <a href='https://www.instagram.com/brainstorm.academy/' target='_blank'><span>@brainstorm.academy</span></a>
+                                <a href='https://www.instagram.com/mateus.wmv/' target='_blank'><span>@mateus.wmv</span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Motion Design e a Internet</h2>
+                        <div class="horario">
+                            <p>09h00</p>
+                            <p>-</p>
+                            <p>11h00</p>
+                        </div>
+                        <p>A internet é um universo próprio. O mundo dos creators e influencers está em alta. O mundo do marketing digital está em alta. Mas como o motion design pode se encaixar nessa realidade? Quais são as possibilidades reais de se trabalhar com motion design direcionado à internet? Conheça a trajetória da produtora B.WMV, que nasceu fazendo motion para as redes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade VisaoSistemicaParaProjetosDeIdentidade">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>11h00</p>
+                    <p>-</p>
+                    <p>12h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Visão Sistêmica para Projetos de Identidade</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Will Nunes" class="lazy" src="{{ url_for('static', filename='convidados/Placeholder/WillNunes.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/WillNunes.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>WILL_NUNES</h2>
+                            <a href='https://www.instagram.com/willonunes/' target='_blank'><p class="rede-social">@willonunes</p></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Visão Sistêmica para Projetos de Identidade</h2>
+                        <div class="horario">
+                            <p>11h00</p>
+                            <p>-</p>
+                            <p>12h00</p>
+                        </div>
+                        <p>Will irá abordar novos pensamento e processos de design para projetar identidades visuais que atendam também a requisitos e as novas exigências dos ambientes digitais. Como pensar um sistema de elementos/componentes do menor para o maior, mantendo consistência e coerência visual.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade AImportanciaDasSoftSkills">
+                <div class="offset-border workshop-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #542e96;"></div>
+                    <p>Palestra</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>14h00</p>
+                    <p>-</p>
+                    <p>15h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">A Importância das Soft Skills</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div id="carouselSlash" class="carousel slide" aria-roledescription="carousel" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/SlashEducation.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/SlashEducation.jpg') }}" type="image/jpeg">
+                                        <img class="lazy d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/SlashEducation.jpg') }}" data-src="{{ url_for('static', filename='convidados/SlashEducation.jpg') }}" alt="Logotipo da Slash Education">
+                                    </picture>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="workshop-image img-container">
+                                    <picture>
+                                        <source data-srcset="{{ url_for('static', filename='convidados/ArianeCereda.webp') }}" type="image/webp">
+                                        <source data-srcset="{{ url_for('static', filename='convidados/ArianeCereda.jpg') }}" type="image/jpeg">
+                                        <img class="lazy d-block w-100" src="{{ url_for('static', filename='convidados/Placeholder/ArianeCereda.jpg') }}" data-src="{{ url_for('static', filename='convidados/ArianeCereda.jpg') }}" alt="Foto do Ariane Cereda">
+                                    </picture>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselSlash" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselSlash" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>SLASH_EDUCATION<br>ARIANE_CEREDA</h2>
+                            <p class="rede-social">
+                                <a href='https://www.instagram.com/slasheducation/' target='_blank'><span>@slasheducation</span></a>
+                                <a href='https://www.instagram.com/acriativona/' target='_blank'><span>@acriativona</span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>A Importância das Soft Skills</h2>
+                        <div class="horario">
+                            <p>14h00</p>
+                            <p>-</p>
+                            <p>15h00</p>
+                        </div>
+                        <p>Soft Skills te tornam relevante.
+                            Habilidades comportamentais irão te ajudar a se diferenciar dos robôs e da inteligência artificial no mercado de trabalho.
+                            Desenvolva soft skills insubstituíveis para o profissional do futuro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="atividade IlustraçaoParaEstamparia">
+                <div class="offset-border palestra-border"></div>
+                <div class="legenda">
+                    <div class='rectangle' aria-hidden="true" style="background-color: #e9154b;"></div>
+                    <p>Workshop</p>
+                </div>
+                <i class="return fas fa-chevron-left" role="button" tabindex="0"></i>
+                <div class="dia-atividades">
+                    <h2>02/10</h2>
+                    <h3>SEXTA-FEIRA</h3>
+                </div>
+                <div class="horario-mobile">
+                    <p>15h00</p>
+                    <p>-</p>
+                    <p>17h00</p>
+                </div>
+                <h2 class="nome-atividade-mobile">Ilustração para Estamparia</h2>
+                <div class="atividade-imagem">
+                    <div>
+                        <div class="palestra-image img-container">
+                            <picture>
+                                <source data-srcset="{{ url_for('static', filename='convidados/OscarTeixeira.webp') }}" type="image/webp">
+                                <source data-srcset="{{ url_for('static', filename='convidados/OscarTeixeira.jpg') }}" type="image/jpeg">
+                                <img alt="Foto do Oscar Teixeira" class="lazy d-block" src="{{ url_for('static', filename='convidados/Placeholder/OscarTeixeira.jpg') }}" data-srcset="{{ url_for('static', filename='convidados/OscarTeixeira.jpg') }}">
+                            </picture>
+                        </div>
+                        <div class="atividade-descricao">
+                            <h2>OSCAR_TEIXEIRA</h2>
+                            <p class="rede-social">
+                                <a href='https://www.instagram.com/oscarteixeira.art/' target='_blank'><span>@oscarteixeira.art</span></a>
+                                <a href='https://www.instagram.com/tumba_store/' target='_blank'><span>@tumba_store</span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Ilustração para Estamparia</h2>
+                        <div class="horario">
+                            <p>15h00</p>
+                            <p>-</p>
+                            <p>17h00</p>
+                        </div>
+                        <p>Neste workshop teremos:<br>
+                            - Desenvolvimento de estampas para estampas<br>
+                            - Tecnicas, dicas e truques para melhor aproveitamento de cores e custo final<br>
+                            - Formatos, texturas, cores e saturação.<br>
+                            - Tecnicas de vetorizaçao, colorização com os programas Adobe Photoshop, e Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block tail %}
+<script>
+    var diaAnterior = '';
+    var carouselCurrent = 1;
+    var carouselTotal = 0;
+
+    $('.data').click(function() {
+        var _self = this
+        if (!$('.dias > .'+_self.className.split(' ')[1]).hasClass('up')) {
+            $('.dia-content').scrollTop(0)
+            $('.atividade-imagem > div:last-of-type').scrollTop(0)
+            $('.datas > .active').children().removeClass('active')
+            $('.datas > .active').removeClass('active')
+            $('.atividades').slideUp(function() {
+                $('.dias').slideDown(1, function() { $('.dias > .'+_self.className.split(' ')[1]).slideDown() })
+                $('.atividades > .active').removeClass('active')
+                $(".atividade-descricao > h2").removeClass("active")
+                $(".atividade-descricao > .rede-social").removeClass("active")
+            })
+            $('.up').slideUp()
+            $('.up').removeClass('up') 
+            $('.dias > .'+_self.className.split(' ')[1]).addClass('up') 
+            $('.datas > .'+_self.className.split(' ')[1]).addClass('active')
+            $('.datas > .'+_self.className.split(' ')[1]).children().addClass('active')
+            carouselCurrent = 1
+        }
+    })
+
+    $('.data').keypress(function(e) {
+        var _self = this
+        if (e.which == 13 || e.which == 32) {
+            if (!$('.dias > .'+_self.className.split(' ')[1]).hasClass('up')) {
+                $('.dia-content').scrollTop(0)
+                $('.atividade-imagem > div:last-of-type').scrollTop(0)
+                $('.datas > .active').children().removeClass('active')
+                $('.datas > .active').removeClass('active')
+                $('.atividades').slideUp(function() {
+                    $('.dias').slideDown(1, function() { $('.dias > .'+_self.className.split(' ')[1]).slideDown() })
+                    $('.atividades > .active').removeClass('active')
+                    $(".atividade-descricao > h2").removeClass("active")
+                    $(".atividade-descricao > .rede-social").removeClass("active")
+                })
+                $('.up').slideUp()
+                $('.up').removeClass('up') 
+                $('.dias > .'+_self.className.split(' ')[1]).addClass('up') 
+                $('.datas > .'+_self.className.split(' ')[1]).addClass('active')
+                $('.datas > .'+_self.className.split(' ')[1]).children().addClass('active')
+                carouselCurrent = 1
+            }
+        }
+    })
+
+    $('.item-atividade').click(function() {
+        var _self = this
+        diaAnterior = $('.up').attr("class").split(' ')[0]
+        $('.dias').slideUp()
+        $('.up').slideUp(function() {
+            $('.atividades > .'+_self.className.split(' ')[1]).addClass('active')
+            $('.atividades').slideDown()
+        })
+        $('.up').removeClass('up')
+        $(".atividade-descricao > h2:first-of-type").addClass("active")
+        $(".atividade-descricao > .rede-social:first-of-type").addClass("active")
+    })
+
+    $('.item-atividade').keypress(function(e) {
+        var _self = this
+        if (e.which == 13 || e.which == 32) {
+            diaAnterior = $('.up').attr("class").split(' ')[0]
+            $('.dias').slideUp()
+            $('.up').slideUp(function() {
+                $('.atividades > .'+_self.className.split(' ')[1]).addClass('active')
+                $('.atividades').slideDown()
+            })
+            $('.up').removeClass('up')
+            $(".atividade-descricao > h2:first-of-type").addClass("active")
+            $(".atividade-descricao > .rede-social:first-of-type").addClass("active")
+        }
+    })
+
+    $('.return').click(function() {
+        $('.atividade-imagem > div:last-of-type').scrollTop(0)
+        $('.atividades').slideUp(function() {
+            $('.dias').slideDown(1, function() { $('.dias > .'+diaAnterior).slideDown() })
+            $('.atividades > .active').removeClass('active')
+            $(".atividade-descricao > h2").removeClass("active")
+            $(".atividade-descricao > .rede-social").removeClass("active")
+        })
+        $('.dias > .'+diaAnterior).addClass('up')
+        carouselCurrent = 1
+    })
+
+    $('.return').keypress(function(e) {
+        if (e.which == 13 || e.which == 32) {
+            $('.atividade-imagem > div:last-of-type').scrollTop(0)
+            $('.atividades').slideUp(function() {
+                $('.dias').slideDown(1, function() { $('.dias > .'+diaAnterior).slideDown() })
+                $('.atividades > .active').removeClass('active')
+                $(".atividade-descricao > h2").removeClass("active")
+                $(".atividade-descricao > .rede-social").removeClass("active")
+            })
+            $('.dias > .'+diaAnterior).addClass('up')
+            carouselCurrent = 1
+        }
+    })
+
+    function carouselChange() {
+        $(".atividade-descricao > h2").removeClass("active")
+        $(".atividade-descricao > .rede-social").removeClass("active")
+        $(".atividade-descricao > h2:nth-of-type("+carouselCurrent+")").addClass("active")
+        $(".atividade-descricao > .rede-social:nth-of-type("+carouselCurrent+")").addClass("active")
+    }
+
+    $(".carousel").on("slide.bs.carousel", function(event) {
+        carouselTotal = $('#'+$(this).attr('id')+' .carousel-item').length;
+        if (event.direction == 'right') { 
+            carouselCurrent -= 1
+            if (carouselCurrent < 1) {
+                carouselCurrent = carouselTotal
+            }
+        }
+        else if (event.direction == 'left') {
+            carouselCurrent += 1
+            if (carouselCurrent > carouselTotal) {
+                carouselCurrent = 1
+            }       
+        }
+        carouselChange();
+    });
+</script>
+{% endblock tail %}
