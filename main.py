@@ -1,3 +1,4 @@
+import os
 from charneira.app import app as charneira_app
 from config import BaseConfig
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
@@ -35,4 +36,5 @@ if __name__ == '__main__':
     if BaseConfig.ENV == 'development':
         run_simple('0.0.0.0', 5000, app, use_debugger=True, use_reloader=True, use_evalex=True, ssl_context=('./cert.pem', './key.pem'))
     else:
-        run_simple('0.0.0.0', 5000, app, use_debugger=True, use_reloader=True, use_evalex=True)
+        port = int(os.environ.get("PORT", 5000))
+        run_simple('0.0.0.0', port, app, use_debugger=True, use_reloader=True, use_evalex=True)
