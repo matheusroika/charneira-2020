@@ -22,7 +22,7 @@ class BaseConfig():
     if DEPLOY:
         ENV = 'production'
         DEBUG = False
-        uri = 'charneira-2020.herokuapp.com'
+        uri = 'charneira-2020.vercel.app'
     else:
         ENV = 'development'
         DEBUG = True

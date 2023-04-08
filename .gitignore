@@ -3,3 +3,4 @@ ENV/
 .vscode/
 cert.pem
 key.pem
+.vercel
